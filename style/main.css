@@ -58,7 +58,7 @@ body {
 .modal img {
   	max-width: 90%;
   	max-height: 90%;
-	<!-- border: 70px solid white; -->
+	border: 0px solid black;
   	border-radius: 10px;
   	box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
