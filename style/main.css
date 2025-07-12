@@ -23,7 +23,7 @@ body {
 .grid {
   	display: grid;
  	 grid-template-columns: repeat(3, 1fr);
-  	gap: 10px 10px;
+  	gap: 5px 10px;
   	max-width: 1000px;
   	margin: auto;
 }
