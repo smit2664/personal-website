@@ -1,11 +1,11 @@
 
 header{
 	background-color: #f2f2f2;
+	color: black;
 	font-family:monospace;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
-	text-color: black;
 }
 
 body {
