@@ -17,10 +17,11 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   max-width: 1000px;
   margin: auto;
+  padding: 1rem;
 }
 
 .grid img {
@@ -64,3 +65,8 @@ body {
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
