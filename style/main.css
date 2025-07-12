@@ -7,14 +7,14 @@ a:visited {
 header{
 	background-color: #f2f2f2;
 	color: black;
-	font-family: Volkhov;
+	font-family: monospace;
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
 }
 
 body {
-	font-family: Volkhov;
+	font-family: monospace;
 	background: #f2f2f2;
   	margin: 0;
  	padding: 0;
