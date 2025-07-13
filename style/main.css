@@ -64,7 +64,7 @@ body {
   	box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-.modal p {
+.modal-caption {
   	color: white;
 	font-family: Georgia;
   	font-size: 1.0rem;
