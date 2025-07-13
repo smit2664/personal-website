@@ -85,3 +85,31 @@ body {
  	color: white;
   	text-decoration: none;
 }
+
+/* Navigation arrows for modal slideshow */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
