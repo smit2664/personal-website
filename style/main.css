@@ -1,93 +1,101 @@
-header{
-	background-color: #f2f2f2;
-	color: black;
-	font-family: Georgia;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
+/* ====== Base Reset ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-a:visited { 
- 	text-decoration: none; 
- 	color: black; 
-}
-
+/* ====== Typography & Body ====== */
 body {
-	font-family: Georgia;
-	background: #f2f2f2;
-  	margin: 0;
- 	padding: 0;
+  font-family: Georgia, serif;
+  background-color: #f2f2f2;
 }
 
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* ====== Header & Navigation ====== */
+header {
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+}
+
+/* ====== Container ====== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* ====== Image Grid ====== */
 .grid {
-  	display: grid;
- 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 1fr; 
-  	gap: 5px 10px;
-  	max-width: 90vw; 
-  	margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 5px 10px;
+  max-width: 90vw;
+  margin: auto;
 }
 
 .grid img {
-  	width: 100%;
-  	border-radius: 8px;
-  	cursor: pointer;
-  	transition: 0.3s;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .grid img:hover {
-  	opacity: 0.85;
+  opacity: 0.85;
 }
 
+/* ====== Modal ====== */
 .modal {
-  	display: none;
-  	position: fixed;
-  	top: 0; left: 0;
-  	width: 100%; height: 100%;
-  	background: rgba(0,0,0,0.8);
-  	justify-content: center;
- 	align-items: center;
-  	z-index: 999;
-	flex-direction: column;
-}
-
-.modal img {
-  	max-width: 90%;
-  	max-height: 90%;
-	border: 0px solid black;
-  	border-radius: 10px;
-  	box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-.modal-caption {
-  	color: white;
-	font-family: Georgia;
-  	font-size: 1.0rem;
-  	margin-top: 0.5rem;
-  	text-align: center;
-  	max-width: 90%;
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .modal:target {
-  	display: flex;
+  display: flex;
 }
 
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-caption {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* ====== Modal Controls ====== */
 .close {
-  	position: absolute;
-  	top: 20px;
-  	right: 30px;
-  	font-size: 40px;
- 	color: white;
-  	text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
 }
 
-/* Navigation arrows for modal slideshow */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   font-size: 40px;
@@ -96,13 +104,14 @@ body {
   cursor: pointer;
   user-select: none;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   transition: background-color 0.3s;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.2);
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .prev {
@@ -112,4 +121,3 @@ body {
 .next {
   right: 20px;
 }
-
