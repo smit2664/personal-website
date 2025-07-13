@@ -17,12 +17,6 @@ a:visited {
 }
 
 /* ====== Slideshow Header ====== */
-header {
-  position: relative;
-  overflow: hidden;
-  height: 250px; /* Adjust height as needed */
-}
-
 .slideshow {
   position: absolute;
   width: 100%;
@@ -53,6 +47,9 @@ header nav {
 
 /* ====== Header & Navigation ====== */
 header {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
   background-color: #f2f2f2;
   color: black;
   text-align: center;
