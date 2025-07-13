@@ -16,6 +16,41 @@ a:visited {
   color: black;
 }
 
+/* ====== Slideshow Header ====== */
+header {
+  position: relative;
+  overflow: hidden;
+  height: 250px; /* Adjust height as needed */
+}
+
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow .slide.active {
+  opacity: 1;
+}
+
+/* Ensure nav overlays on top */
+header nav {
+  position: relative;
+  z-index: 1;
+  background: rgba(242, 242, 242, 0.8); /* semi-transparent */
+  padding: 1rem 0;
+}
+
 /* ====== Header & Navigation ====== */
 header {
   background-color: #f2f2f2;
