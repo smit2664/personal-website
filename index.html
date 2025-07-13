@@ -59,6 +59,14 @@
       		{ src: "photos/12.jpg", caption: "Mackinac Bridge - Mackinac City, Michigan" }
     	];
 
+// Preload full-size images
+	const preloadedImages = [];
+	images.forEach((img) => {
+  		const preload = new Image();
+ 		preload.src = img.src;
+  	preloadedImages.push(preload);
+});
+	  
     let currentIndex = 0;
 
     function openModal(index) {
