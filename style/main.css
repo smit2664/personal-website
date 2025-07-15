@@ -81,7 +81,7 @@ header h1 a {
 
 .grid img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0px;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
