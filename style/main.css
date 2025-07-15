@@ -73,7 +73,7 @@ header h1 a {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 0px;
   gap: 25px 25px;
   max-width: 90vw;
   margin: auto;
@@ -111,7 +111,7 @@ header h1 a {
 .modal img {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
