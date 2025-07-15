@@ -72,14 +72,19 @@ header h1 a {
 /* ====== Image Grid ====== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px 25px;
-  max-width: 90vw;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  max-width: 1200px;
+  width: 90vw;
+  margin: 20px auto;
+  padding: 0;
 }
 
 .grid img {
   width: 100%;
+  aspect-ratio: 4 / 3; /* keeps images consistent */
+  object-fit: cover;
+  display: block;
   border-radius: 0px;
   cursor: pointer;
   transition: opacity 0.3s ease;
