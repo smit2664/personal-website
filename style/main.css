@@ -96,18 +96,6 @@ header h1 a {
   opacity: 0.85;
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2-wide on tablets/small laptops */
-  }
-}
-
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr; /* 1-wide on phones */
-  }
-}
-
 /* ====== Modal ====== */
 .modal {
   display: none;
