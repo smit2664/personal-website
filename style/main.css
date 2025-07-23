@@ -27,14 +27,14 @@ a:visited {
 }
 
 .slideshow .slide {
-  position: absolute;
+  position: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  border: 5px solid purple;
+  border: 5px solid red;
 }
 
 .slideshow .slide.active {
