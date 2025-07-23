@@ -18,7 +18,7 @@ a:visited {
 
 /* ====== Slideshow Header ====== */
 .slideshow {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
   width: 100%;
