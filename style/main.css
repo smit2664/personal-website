@@ -52,10 +52,11 @@ header nav {
 /* ====== Header & Navigation ====== */
 header {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   aspect-ratio: 16/9;
   background-color: #f2f2f2;
-  text-align: center;
+  text-align: left;
 }
 
 header h1 a {
@@ -67,6 +68,7 @@ header h1 a {
 .container {
   max-width: 1200px;
   width: 100%;
+  margin-top: 2rem; 
   margin: 0 auto;
   padding: 0 10px;
 }
