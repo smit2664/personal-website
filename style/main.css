@@ -26,15 +26,15 @@ header nav {
 
 /* ====== Header & Navigation ====== */
 header{
-	background-attachment:fixed;
-	background-image:url("photos/1.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:top;
-	height:75vh;
-	margin:0;
-	padding:0;
-	position:center;
+	background-attachment: fixed;
+	background-image: url("photos/1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 75vh;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 header h1 a {
