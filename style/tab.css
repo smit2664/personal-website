@@ -62,15 +62,9 @@ nav ul li a:hover {
   color: #999;
 }
 
-.column {
-  float: left;
-}
-
-.left, .right {
-  width: 25%;
-}
-
-.middle {
+about {
+  text-align: center;
+  text-color: black;
   width: 50%;
 }
 
