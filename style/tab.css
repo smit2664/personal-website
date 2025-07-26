@@ -64,8 +64,9 @@ nav ul li a:hover {
 
 p {
   text-align: center;
-  text-color: black;
+  color: black;
   width: 50%;
+  margin: 0 auto;
 }
 
 /* ====== Footer ====== */
