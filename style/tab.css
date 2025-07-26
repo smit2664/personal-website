@@ -69,6 +69,14 @@ p {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  p {
+    width: 100%;
+    max-width: none; /* Optional, removes any max-width on mobile */
+    padding: 0 10px; /* Optional, adds padding to prevent text from touching edges */
+  }
+}
+
 /* ====== Footer ====== */
 footer {
   font-family: Georgia, serif;
