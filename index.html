@@ -13,7 +13,8 @@
   	<header>
     		<nav>
       			<h1><a href="https://smit2664.github.io/personal-website/">CALVIN SMITH</a></h1>
-			<ul>
+
+			<ul class="desktop-nav">
 				<li><a href="about.html">ABOUT</a></li>
 				<li><a href="projects.html">PROJECTS</a></li>
 				<li><a href="prints.html">PRINTS</a></li>
@@ -135,7 +136,8 @@
 <script>
   function toggleMobileMenu() {
     const menu = document.getElementById("mobileMenu");
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    const isOpen = menu.style.display === "block";
+    menu.style.display = isOpen ? "none" : "block";
   }
 </script>
 				
