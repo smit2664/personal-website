@@ -9,10 +9,8 @@
 body {
   font-family: Georgia, serif;
   background-color: #f2f2f2;
-  line-height: 1.6;
 }
 
-/* Anchor styling */
 a {
   text-decoration: none;
   color: black;
@@ -31,6 +29,16 @@ header {
   background-position: top;
   height: 50vh;
   position: relative;
+}
+
+header nav {
+  position: relative;
+  z-index: 1;
+  background: rgba(242, 242, 242, 0.8); /* semi-transparent */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Navigation container */
