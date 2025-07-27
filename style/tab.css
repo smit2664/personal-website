@@ -17,10 +17,13 @@ a:visited {
 }
 
 .text-column {
-  display: grid;
-  justify-content: center;
-  text-align: center;
+  margin: 0 auto;
+  text-align: jsutify;
   width: 50%;
+}
+
+.text-column p {
+  text-align: justify;
 }
 
 /* ====== Header & Navigation ====== */
