@@ -1,4 +1,5 @@
 function toggleMobileMenu() {
-  const mobileMenu = document.getElementById('mobileMenu');
-  mobileMenu.classList.toggle('show'); // Toggle the class to show/hide the mobile menu
+  const menu = document.getElementById("mobileMenu");
+  const isOpen = menu.style.display === "block";
+  menu.style.display = isOpen ? "none" : "block";
 }
