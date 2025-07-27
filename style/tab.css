@@ -137,7 +137,11 @@ footer a img.bottom {
     padding: 0;
     background: rgba(242, 242, 242, 0.95);
   }
-
+  
+.mobile-dropdown.show {
+  display: block;
+}
+  
   .mobile-dropdown li {
     border-bottom: 1px solid #ddd;
     text-align: center;
