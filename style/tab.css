@@ -73,7 +73,10 @@ nav ul li a:hover {
 }
 
 header h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
 /* ====== Footer ====== */
