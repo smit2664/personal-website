@@ -17,7 +17,7 @@ a:visited {
 }
 
 .text-column {
-  display: flex;
+  display: grid;
   justify-content: center;
   width: 50%;
 }
