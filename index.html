@@ -1,145 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  		<meta charset="UTF-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  		<title>CALVIN SMITH</title>
-  		<link href="style/main.css" rel="stylesheet" type="text/css">
-  		<link rel="shortcut icon" href="photos/Steam Profile Picture.ico" type="image/x-icon">
-  		<link rel="icon" href="photos/Steam Profile Picture.ico" type="image/ico">
-	</head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALVIN SMITH</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="shortcut icon" href="photos/Steam Profile Picture.ico" type="image/x-icon" />
+  <link rel="icon" href="photos/Steam Profile Picture.ico" type="image/ico" />
+</head>
 
 <body>
-  	<header>
-    		<nav>
-      			<h1><a href="https://smit2664.github.io/personal-website/">CALVIN SMITH</a></h1>
+  <header>
+    <nav>
+      <h1><a href="https://smit2664.github.io/personal-website/">CALVIN SMITH</a></h1>
 
-			<ul class="desktop-nav">
-				<li><a href="tabs/about.html">ABOUT</a></li>
-				<li><a href="tabs/projects.html">PROJECTS</a></li>
-				<li><a href="tabs/prints.html">PRINTS</a></li>
-			</ul>
-			
-			<div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
-				<ul class="mobile-dropdown" id="mobileMenu">
-  					<li><a href="tabs/about.html">ABOUT</a></li>
-  					<li><a href="tabs/projects.html">PROJECTS</a></li>
-  					<li><a href="tabs/prints.html">PRINTS</a></li>
-				</ul>
-    		</nav>
-  	</header>
-	
-	<div class="container">
-    		<div class="grid">
-      			<img src="photos/t01.jpg" alt="Thumb 1" onclick="openModal(0)">
-      			<img src="photos/t02.jpg" alt="Thumb 2" onclick="openModal(1)">
-      			<img src="photos/t03.jpg" alt="Thumb 3" onclick="openModal(2)">
-      			<img src="photos/t04.jpg" alt="Thumb 4" onclick="openModal(3)">
-      			<img src="photos/t05.jpg" alt="Thumb 5" onclick="openModal(4)">
-      			<img src="photos/t06.jpg" alt="Thumb 6" onclick="openModal(5)">
-      			<img src="photos/t07.jpg" alt="Thumb 7" onclick="openModal(6)">
-      			<img src="photos/t08.jpg" alt="Thumb 8" onclick="openModal(7)">
-      			<img src="photos/t09.jpg" alt="Thumb 9" onclick="openModal(8)">
-      			<img src="photos/t10.jpg" alt="Thumb 10" onclick="openModal(9)">
-      			<img src="photos/t11.jpg" alt="Thumb 11" onclick="openModal(10)">
-      			<img src="photos/t12.jpg" alt="Thumb 12" onclick="openModal(11)">
-			<img src="photos/t13.jpg" alt="Thumb 13" onclick="openModal(12)">
-			<img src="photos/t14.jpg" alt="Thumb 14" onclick="openModal(13)">
-    		</div>
-  	</div>
+      <ul class="desktop-nav">
+        <li><a href="tabs/about.html">ABOUT</a></li>
+        <li><a href="tabs/projects.html">PROJECTS</a></li>
+        <li><a href="tabs/prints.html">PRINTS</a></li>
+      </ul>
+
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
+
+      <ul class="mobile-dropdown" id="mobileMenu">
+        <li><a href="tabs/about.html">ABOUT</a></li>
+        <li><a href="tabs/projects.html">PROJECTS</a></li>
+        <li><a href="tabs/prints.html">PRINTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <img src="photos/t01.jpg" alt="Thumb 1" onclick="openModal(0)" />
+      <img src="photos/t02.jpg" alt="Thumb 2" onclick="openModal(1)" />
+      <img src="photos/t03.jpg" alt="Thumb 3" onclick="openModal(2)" />
+      <img src="photos/t04.jpg" alt="Thumb 4" onclick="openModal(3)" />
+      <img src="photos/t05.jpg" alt="Thumb 5" onclick="openModal(4)" />
+      <img src="photos/t06.jpg" alt="Thumb 6" onclick="openModal(5)" />
+      <img src="photos/t07.jpg" alt="Thumb 7" onclick="openModal(6)" />
+      <img src="photos/t08.jpg" alt="Thumb 8" onclick="openModal(7)" />
+      <img src="photos/t09.jpg" alt="Thumb 9" onclick="openModal(8)" />
+      <img src="photos/t10.jpg" alt="Thumb 10" onclick="openModal(9)" />
+      <img src="photos/t11.jpg" alt="Thumb 11" onclick="openModal(10)" />
+      <img src="photos/t12.jpg" alt="Thumb 12" onclick="openModal(11)" />
+      <img src="photos/t13.jpg" alt="Thumb 13" onclick="openModal(12)" />
+      <img src="photos/t14.jpg" alt="Thumb 14" onclick="openModal(13)" />
+    </div>
+  </div>
 
   <!-- Modal -->
   <div class="modal" id="modal">
-    	<span class="close" onclick="closeModal()">&times;</span>
-    	<span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-    	<img class="modal-image" src="" alt="Enlarged image">
-    	<p class="modal-caption"></p>
-    	<span class="next" onclick="changeSlide(1)">&#10095;</span>
+    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+    <img class="modal-image" src="" alt="Enlarged image" />
+    <p class="modal-caption"></p>
+    <span class="next" onclick="changeSlide(1)">&#10095;</span>
   </div>
 
-  <!-- Script -->
-  <script>
-  const images = [
-    	{ src: "photos/01.jpg", caption: "Portland Head Lighthouse - Cape Elizabeth, Maine" },
-    	{ src: "photos/02.jpg", caption: "Schönbrunn Palace - Vienna, Austria" },
-    	{ src: "photos/03.jpg", caption: "Point Betsie Lighthouse - Frankfort, Michigan" },
-    	{ src: "photos/04.jpg", caption: "Sun and Moon" },
-    	{ src: "photos/05.jpg", caption: "Marblehead Lighthouse - Marblehead, Ohio" },
-    	{ src: "photos/06.jpg", caption: "St Joseph North Pier Outer Lighthouse - St. Joseph, Michigan" },
-    	{ src: "photos/07.jpg", caption: "St. Peter Cathedral - Regensburg, Germany" },
-    	{ src: "photos/08.jpg", caption: "Old Faithful - Yellowstone National Park" },
-    	{ src: "photos/09.jpg", caption: "Grand Teton - Grand Teton National Park" },
-    	{ src: "photos/10.jpg", caption: "Lake Minnewanka - Banff National Park" },
-    	{ src: "photos/11.jpg", caption: "Mount Rundle - Alberta, Canada" },
-    	{ src: "photos/12.jpg", caption: "Mackinac Bridge - Mackinac City, Michigan" },
-	{ src: "photos/13.jpg", caption: "Windmills - Kinderdijk, The Netherlands" },
-	{ src: "photos/14.jpg", caption: "Cologne Catherdral - Cologne, Germany" }
-  ];
+  <footer>
+    <h2>FOLLOW ME :D</h2>
+    <a href="https://www.instagram.com/calvintsmith/">
+      <img class="bottom" src="photos/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://www.linkedin.com/in/calvin-smith-855a13180/">
+      <img class="bottom" src="photos/linkedin.png" alt="LinkedIn" />
+    </a>
+  </footer>
 
-  // === Preload Full-Size Modal Images ===
-  const preloadedImages = [];
-  images.forEach((img) => {
-    const preload = new Image();
-    preload.src = img.src;
-    preloadedImages.push(preload);
-  });
-
-  // === Modal Gallery Logic ===
-  let currentIndex = 0;
-
-  function openModal(index) {
-    currentIndex = index;
-    document.getElementById("modal").style.display = "flex";
-    updateModal();
-  }
-
-  function closeModal() {
-    document.getElementById("modal").style.display = "none";
-  }
-
-  function changeSlide(step) {
-    currentIndex = (currentIndex + step + images.length) % images.length;
-    updateModal();
-  }
-
-  function updateModal() {
-    const modalImg = document.querySelector(".modal-image");
-    const modalCaption = document.querySelector(".modal-caption");
-
-    modalImg.classList.remove("loaded");
-    modalImg.onload = () => modalImg.classList.add("loaded");
-
-    modalImg.src = images[currentIndex].src;
-    modalCaption.textContent = images[currentIndex].caption;
-  }
-
-  document.addEventListener("keydown", (e) => {
-    const modal = document.getElementById("modal");
-    if (modal.style.display === "flex") {
-      if (e.key === "ArrowRight") changeSlide(1);
-      if (e.key === "ArrowLeft") changeSlide(-1);
-      if (e.key === "Escape") closeModal();
-    }
-  });
-</script>
-
-	<footer>
-		<h2>FOLLOW ME :D</h2>
-			<a href="https://www.instagram.com/calvintsmith/">
-				<img class="bottom" src="photos/instagram.png" alt="Instagram">
-			<a/>
-			<a href="https://www.linkedin.com/in/calvin-smith-855a13180/">
-				<img class="bottom" src="photos/linkedin.png" alt="LinkedIn">
-			</a>
-	</footer>
-
-<script>
-  function toggleMobileMenu() {
-    const menu = document.getElementById("mobileMenu");
-    const isOpen = menu.style.display === "block";
-    menu.style.display = isOpen ? "none" : "block";
-  }
-</script>
-				
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
 </body>
 </html>
