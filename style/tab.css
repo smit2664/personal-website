@@ -67,12 +67,13 @@ h2 {
   color: black;
 }
 
+/* ====== Paragraph Styles ====== */
 p {
   text-align: justify;
   color: black;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0 20px;  /* Optional: Adjust padding if needed */
 }
 
 @media (max-width: 768px) {
