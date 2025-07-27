@@ -16,6 +16,10 @@ a:visited {
   color: black;
 }
 
+.text-column {
+  text-align: justify;
+}
+
 /* ====== Header & Navigation ====== */
 header {
   background-attachment: fixed;
