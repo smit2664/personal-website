@@ -17,8 +17,9 @@ a:visited {
 }
 
 .text-column {
-  display: inline-grid;
+  display: grid;
   justify-content: center;
+  text-align: center;
   width: 50%;
 }
 
