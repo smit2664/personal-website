@@ -100,7 +100,7 @@ nav ul li a:hover {
     top: 100px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
-    background: rgba(242, 242, 242, 0.95);
+    background: rgba(242, 242, 242, 0.25);
     flex-direction: column;
     list-style: none;
     margin: 0;
