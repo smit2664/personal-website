@@ -223,6 +223,8 @@ footer a img.bottom {
 
   .mobile-dropdown {
     display: none;
+    overflow: hidden;
+    position: relative;
     flex-direction: column;
     list-style: none;
     margin: 0;
