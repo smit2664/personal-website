@@ -69,6 +69,73 @@ nav ul li a:hover {
   padding: 0 10px;
 }
 
+/* Hide mobile toggle and dropdown on desktop */
+.mobile-menu-toggle,
+.mobile-dropdown {
+  display: none;
+}
+
+/* Desktop nav styles */
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide desktop nav on mobile, show mobile elements */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Georgia, serif;
+    position: relative;
+    z-index: 2; /* Ensure it's on top of dropdown */
+  }
+
+  .mobile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Below the nav */
+    left: 0;
+    width: 100%;
+    background: rgba(242, 242, 242, 0.95);
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .mobile-dropdown li {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .mobile-dropdown li a {
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, serif;
+  }
+
+  .mobile-dropdown li a:hover {
+    color: #999;
+  }
+
+  nav {
+    position: relative; /* Needed for absolute positioning of dropdown */
+  }
+}
+
 /* ====== Image Grid ====== */
 .grid {
   display: grid;
@@ -189,60 +256,4 @@ footer a img.bottom {
 
 .next {
   right: 20px;
-}
-
-/* Hide mobile toggle and dropdown on desktop */
-.mobile-menu-toggle,
-.mobile-dropdown {
-  display: none;
-}
-
-/* Desktop nav styles */
-.desktop-nav {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Hide desktop nav on mobile, show mobile elements */
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .mobile-menu-toggle {
-    display: block;
-    cursor: pointer;
-    background-color: #ccc;
-    padding: 10px;
-    font-size: 18px;
-    font-family: Georgia, serif;
-  }
-
-  .mobile-dropdown { /* List of Tabs in the dropdown */
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: rgba(242, 242, 242, 0.8);
-  }
-
-  .mobile-dropdown li { /* Box in the dropwdown */
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .mobile-dropdown li a { /* Text in the dropdown */
-    color: black;
-    text-decoration: none;
-    font-family: Georgia, serif;
-  }
-
-  .mobile-dropdown li a:hover {
-    color: #999;
-  }
 }
