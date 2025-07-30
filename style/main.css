@@ -62,12 +62,11 @@ nav ul li a:hover {
   color: #999;
 }
 
-/* ====== Container ====== */
+/* ====== Grid Container ====== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  background-color: Purple;
 }
 
 /* ====== Image Grid ====== */
@@ -248,3 +247,48 @@ footer a img.bottom {
   }
 }
 
+/* Test Dropdown Nav */
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: Purple;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: blue;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
