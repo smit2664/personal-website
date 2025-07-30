@@ -86,11 +86,11 @@ nav ul li a:hover {
   .mobile-menu-toggle {
     display: block;
     cursor: pointer;
-    background-color: #ccc;
+    background-color: transparent;
     padding: 10px;
     font-size: 18px;
     font-family: Georgia, serif;
-    position: relative;
+    position: absolute;
     z-index: 3;
   }
 
@@ -110,8 +110,8 @@ nav ul li a:hover {
 
   .mobile-dropdown li {
     border-bottom: 1px solid #ddd;
-    text-align: center;
-    padding: 12px 0;
+    text-align: Left;
+    padding: 12px 16px;
   }
 
   .mobile-dropdown li a {
