@@ -31,7 +31,7 @@ header nav {
   position: relative;
   z-index: 1;
   background: rgba(242, 242, 242, 0.6); /* 0.8 semi-transparent */
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,7 @@ header nav {
 nav h1 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 nav ul {
@@ -96,7 +96,7 @@ nav ul li a:hover {
   .mobile-dropdown {
     display: none;
     position: absolute;
-    top: 76px; /* adjust if needed to appear under nav */
+    top: 40px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
     background: rgba(242, 242, 242, 0.6);
