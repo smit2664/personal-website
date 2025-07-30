@@ -91,16 +91,12 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: Georgia, serif;
     margin-left: auto;
-    /*position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;*/
   }
 
   .mobile-dropdown {
     display: none;
     position: absolute;
-    top: 55px; /* adjust if needed to appear under nav */
+    top: 60px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
     background: rgba(242, 242, 242, 0.8);
