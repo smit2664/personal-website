@@ -1,5 +1,8 @@
 function toggleMobileMenu() {
   const menu = document.getElementById("mobileMenu");
-  const isOpen = menu.style.display === "block";
-  menu.style.display = isOpen ? "none" : "block";
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+  }
 }
