@@ -63,12 +63,24 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// === Mobile Menu Toggle ===
+// === Mobile Menu Toggle === 
 function toggleMobileMenu() {
   const menu = document.getElementById("mobileMenu");
   const isOpen = menu.style.display === "block";
   menu.style.display = isOpen ? "none" : "block";
 }
+
+// === Mobile Menu Test ===
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 // === Expose globally (if needed) ===
 window.openModal = openModal;
