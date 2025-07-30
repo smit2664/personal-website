@@ -96,7 +96,7 @@ nav ul li a:hover {
   .mobile-dropdown {
     display: none;
     position: absolute;
-    top: 70px; /* adjust if needed to appear under nav */
+    top: 71px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
     background: rgba(242, 242, 242, 0.8);
