@@ -91,6 +91,8 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: Georgia, serif;
     position: absolute;
+    top: 0;
+    right: 0;
     z-index: 3;
   }
 
