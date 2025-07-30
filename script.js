@@ -71,16 +71,14 @@ function toggleMobileMenu() {
 }
 
 // === Mobile Menu Test ===
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+function toggleMobileMenu() {
+  const menu = document.getElementById("mobileMenu");
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
   } else {
-    x.style.display = "block";
+    menu.style.display = "flex";
   }
 }
-</script>
 
 // === Expose globally (if needed) ===
 window.openModal = openModal;
