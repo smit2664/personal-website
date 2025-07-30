@@ -62,13 +62,6 @@ nav ul li a:hover {
   color: #999;
 }
 
-/* ====== Grid Container ====== */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 /* Hide mobile toggle and dropdown on desktop */
 .mobile-menu-toggle,
 .mobile-dropdown {
@@ -98,13 +91,13 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: Georgia, serif;
     position: relative;
-    z-index: 2; /* Ensure it's on top of dropdown */
+    z-index: 3;
   }
 
   .mobile-dropdown {
     display: none;
     position: absolute;
-    top: 100%; /* Below the nav */
+    top: 100px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
     background: rgba(242, 242, 242, 0.95);
@@ -112,7 +105,7 @@ nav ul li a:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .mobile-dropdown li {
@@ -131,9 +124,22 @@ nav ul li a:hover {
     color: #999;
   }
 
-  nav {
-    position: relative; /* Needed for absolute positioning of dropdown */
+  header {
+    position: relative;
+    z-index: 1;
   }
+
+  nav {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* ====== Grid Container ====== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* ====== Image Grid ====== */
