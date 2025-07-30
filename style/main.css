@@ -30,7 +30,7 @@ header {
 header nav {
   position: relative;
   z-index: 1;
-  background: rgba(242, 242, 242, 0.8); /* semi-transparent */
+  background: rgba(242, 242, 242, 0.8); /* 0.8 semi-transparent */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -91,15 +91,16 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: Georgia, serif;
     position: absolute;
-    top: 0;
+    margin-left: auto;
+    /*top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 3;*/
   }
 
   .mobile-dropdown {
     display: none;
     position: absolute;
-    top: 70px; /* adjust if needed to appear under nav */
+    top: 62px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
     background: rgba(242, 242, 242, 0.8);
