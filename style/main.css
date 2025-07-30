@@ -30,7 +30,7 @@ header {
 header nav {
   position: relative;
   z-index: 1;
-  background: rgba(242, 242, 242, 0.8); /* 0.8 semi-transparent */
+  background: rgba(242, 242, 242, 0.6); /* 0.8 semi-transparent */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,7 @@ nav ul li a:hover {
     top: 76px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
-    background: rgba(242, 242, 242, 0.8);
+    background: rgba(242, 242, 242, 0.6);
     flex-direction: column;
     list-style: none;
     margin: 0;
