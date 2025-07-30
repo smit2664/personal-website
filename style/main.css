@@ -222,14 +222,15 @@ footer a img.bottom {
   }
 
   .mobile-dropdown {
-    display: none;
     overflow: hidden;
+    background-color: Purple;
     position: relative;
+    /*display: none;
     flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
-    background: rgba(242, 242, 242, 0.95);
+    background: rgba(242, 242, 242, 0.95);*/
   }
 
   .mobile-dropdown li {
