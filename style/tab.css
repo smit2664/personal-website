@@ -32,6 +32,13 @@ main h2 {
   text-align: justify;
 }
 
+.about {
+  width: 50vw;      
+  height: auto;     
+  display: block;   
+  margin: 0 auto;   
+}
+
 /* ====== Header & Navigation ====== */
 header {
   background-attachment: fixed;
