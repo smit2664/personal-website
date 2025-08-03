@@ -160,7 +160,8 @@ main hr.solid {
   border-top: 3px solid #bbb;
   margin: 0 auto;
   width: 50vw;
-  
+}
+
 /* ====== Footer ====== */
 footer {
   font-family: Georgia, serif;
