@@ -157,7 +157,7 @@ nav ul li a:hover {
 }
 
 main hr.solid {
-  border-top: 3px solid #bbb;
+  border-top: 1.5px solid black;
   margin: 0 auto;
   width: 50vw;
 }
