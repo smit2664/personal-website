@@ -30,6 +30,7 @@ main h2 {
 
 .text-column p {
   text-align: justify;
+  color: #bbb;
 }
 
 .about {
