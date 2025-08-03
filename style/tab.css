@@ -158,6 +158,7 @@ nav ul li a:hover {
 
 main hr.solid {
   border-top: 3px solid #bbb;
+  text-align: center;
   width: 50vh;
   
 /* ====== Footer ====== */
