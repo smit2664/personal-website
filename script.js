@@ -13,7 +13,8 @@ const images = [
   { src: "photos/11.jpg", caption: "Mount Rundle - Alberta, Canada" },
   { src: "photos/12.jpg", caption: "Mackinac Bridge - Mackinac City, Michigan" },
   { src: "photos/13.jpg", caption: "Windmills - Kinderdijk, The Netherlands" },
-  { src: "photos/14.jpg", caption: "Cologne Catherdral - Cologne, Germany" }
+  { src: "photos/14.jpg", caption: "Cologne Catherdral - Cologne, Germany" },
+  { src: "photos/15.jpg", caption: "Signal Mountain - Jackson, Wyoming" }
 ];
 
 // === Preload Full-Size Modal Images ===
