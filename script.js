@@ -16,14 +16,14 @@ const images = [
   { src: "photos/14.jpg", caption: "Cologne Catherdral - Cologne, Germany" },
   { src: "photos/15.jpg", caption: "Signal Mountain - Jackson, Wyoming" },
   { src: "photos/16.jpg", caption: "St. Paul's Cathedral - Strasbourg, France" },
-  { src: "photos/17.jpg", caption: "XX - Cologne, Germany" },
-  { src: "photos/18.jpg", caption: "XX - Cologne, Germany" },
+  { src: "photos/17.jpg", caption: "XX - XX" },
+  { src: "photos/18.jpg", caption: "XX - XX" },
   { src: "photos/19.jpg", caption: "Cologne Catherdral - Cologne, Germany" },
   { src: "photos/20.jpg", caption: "Windmills - Kinderdijk, The Netherlands" },
-  { src: "photos/21.jpg", caption: "Cologne Catherdral - Cologne, Germany" },
-  { src: "photos/22.jpg", caption: "Cologne Catherdral - Cologne, Germany" },
+  { src: "photos/21.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" },
+  { src: "photos/22.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" },
   { src: "photos/23.jpg", caption: "Windmill - Kinderdijk, The Netherlands" },
-  { src: "photos/24.jpg", caption: "XX - Cologne, Germany" }
+  { src: "photos/24.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" }
 ];
 
 // === Preload Full-Size Modal Images ===
