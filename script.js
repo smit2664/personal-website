@@ -23,7 +23,11 @@ const images = [
   { src: "photos/21.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" },
   { src: "photos/22.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" },
   { src: "photos/23.jpg", caption: "Windmill - Kinderdijk, The Netherlands" },
-  { src: "photos/24.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" }
+  { src: "photos/24.jpg", caption: "St. Jakobus Church - Rüdesheim am Rhein, Germany" },
+  { src: "photos/25.jpg", caption: "Old Faithful - Yellowstone National Park" },
+  { src: "photos/26.jpg", caption: "Blacktail Ponds - Grand Teton National Park" },
+  { src: "photos/27.jpg", caption: "Red Fox - Grand Teton National Park" },
+  { src: "photos/28.jpg", caption: "Airplane and Mountains - Grand Teton National Park" }
 ];
 
 // === Preload Full-Size Modal Images ===
