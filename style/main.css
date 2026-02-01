@@ -30,7 +30,7 @@ header {
 header nav {
   position: relative;
   z-index: 1;
-  background: rgba(167, 179, 243, 0.75); /* 0.XX semi-transparent */
+  background: rgba(242, 242, 242, 0.75); /* 0.XX semi-transparent */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -261,4 +261,5 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
