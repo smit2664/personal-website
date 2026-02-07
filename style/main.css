@@ -23,8 +23,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #000000;
-  color: #FFEEDE;
   height: 100vh;
   position: relative;
 }
@@ -263,6 +261,7 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
 
 
