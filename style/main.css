@@ -8,7 +8,9 @@
 /* ====== Body ====== */
 body {
   font-family: Georgia, serif;
-  background-color: #f2f2f2;
+  color: #FFF1DB; 
+  background-color: black;
+  /*background-color: #f2f2f2;*/
 }
 
 a:visited {
@@ -261,6 +263,7 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
 
 
