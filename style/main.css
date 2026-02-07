@@ -30,7 +30,7 @@ header {
 header nav {
   position: relative;
   z-index: 1;
-  background: rgba(242, 242, 242, 0.75); /* 0.XX semi-transparent */
+  background: rgba(242, 242, 242, 1); /* 0.XX semi-transparent */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,7 @@ nav ul li a:hover {
     top: 84px; /* adjust if needed to appear under nav */
     left: 0;
     width: 100%;
-    background: rgba(242, 242, 242, 0.5);
+    background: rgba(242, 242, 242, 1);
     flex-direction: column;
     list-style: none;
     margin: 0;
@@ -261,6 +261,7 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
 
 
