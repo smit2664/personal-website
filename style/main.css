@@ -8,8 +8,7 @@
 /* ====== Body ====== */
 body {
   font-family: Georgia, serif;
-  color: #fff1db; 
-  background-color: #000000;
+  background-color: #FFEEDE;
   /*background-color: #f2f2f2;*/
 }
 
@@ -25,6 +24,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-color: #000000;
+  color: #FFEEDE;
   height: 100vh;
   position: relative;
 }
@@ -263,6 +264,7 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
 
 
