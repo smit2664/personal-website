@@ -8,8 +8,8 @@
 /* ====== Body ====== */
 body {
   font-family: Georgia, serif;
-  color: #FFF1DB; 
-  background-color: black;
+  color: #fff1db; 
+  background-color: #000000;
   /*background-color: #f2f2f2;*/
 }
 
@@ -263,6 +263,7 @@ footer a img.bottom {
 .next {
   right: 20px;
 }
+
 
 
 
