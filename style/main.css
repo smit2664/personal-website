@@ -148,8 +148,8 @@ nav ul a:hover{
     }
     
     .footer-banner {
-        height: 100vh;
-        height: 100dvh;
+        height: 90vh;
+        height: 90dvh;
         text-align: center;
     }
 
@@ -251,8 +251,8 @@ nav ul a:hover{
     background-image: url("../photos/Header2a.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    height: 100dvh;
+    height: 90vh;
+    height: 90dvh;
     display: flex;
     align-items: center;
     justify-content: center;
