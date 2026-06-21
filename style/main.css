@@ -84,7 +84,8 @@ nav ul a:hover{
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
-.mobile-menu-toggle {
+.mobile-menu-toggle{
+    display: none;
     color: var(--color-white);
     cursor: pointer;
     font-size: 25px;
@@ -105,6 +106,9 @@ nav ul a:hover{
 
 /* Slide-out drawer */
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
     .header-bar nav ul {
         position: fixed;
         top: 0;
@@ -229,7 +233,7 @@ nav ul a:hover{
 .footer-banner{
     background: var(--color-black);
     background-attachment: fixed;
-    background-image: url("../photos/Header2.jpg");
+    background-image: url("../photos/Header2a.jpg");
     background-size: cover;
     background-position: center;
     height: 750px;
