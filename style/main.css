@@ -154,7 +154,7 @@ nav ul a:hover{
     }
 
     .footer-banner {
-        height: 400px;
+        height: 400px !important;
     }
 }
 
