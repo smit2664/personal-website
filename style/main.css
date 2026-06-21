@@ -26,6 +26,11 @@ body{
     padding: 0;
 }
 
+/* Lock background scroll while the mobile drawer is open */
+body.menu-open{
+    overflow: hidden;
+}
+
 /* HEADER */
 header{
     background: var(--color-black);
@@ -89,6 +94,7 @@ nav ul a:hover{
     color: var(--color-white);
     cursor: pointer;
     font-size: 25px;
+    touch-action: manipulation;
 }
 
 /* Overlay */
@@ -113,7 +119,8 @@ nav ul a:hover{
         position: fixed;
         top: 0;
         right: 0;
-        width: 25%;
+        width: 50%;
+        max-width: 280px;
         height: 100vh;
         height: 100dvh;
         flex-direction: column;
@@ -139,8 +146,8 @@ nav ul a:hover{
     .header-bar nav ul li a {
         display: block;
         padding: 1rem;
-        font-size: 15px;
-        text-align: Left;
+        font-size: 16px;
+        text-align: left;
     }
 
     .header-bar {
@@ -158,6 +165,13 @@ nav ul a:hover{
         text-align: center;
         padding: 0 20px;
         width: 100%;
+    }
+}
+
+/* Tighten the drawer further on very narrow phones (SE, mini) */
+@media (max-width: 380px) {
+    .header-bar nav ul {
+        width: 75%;
     }
 }
 
