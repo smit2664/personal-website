@@ -147,14 +147,16 @@ nav ul a:hover{
         padding: 1rem;
     }
     
-    .bottom-landing {
+    .footer-banner {
+        height: 400px;
+        text-align: center;
+    }
+
+    .footer-banner .bottom-landing {
         font-size: 5vw;
         text-align: center;
         padding: 0 20px;
-    }
-
-    .footer-banner {
-        height: 400px !important;
+        width: 100%;
     }
 }
 
