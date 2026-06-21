@@ -189,7 +189,7 @@ nav ul a:hover{
 
 .box:hover a{
     background-color: var(--color-white);
-    color: rgb(133, 133, 133);
+    color: var(--color-black);
 }
 
 /* ABOUT */
