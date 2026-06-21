@@ -1,89 +1,82 @@
+<!-- Right click index.html and open with live -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calvin Smith</title>
-  <link rel="stylesheet" href="style/main.css" />
-  <link rel="shortcut icon" href="photos/Steam Profile Picture.ico" type="image/x-icon" />
-  <link rel="icon" href="photos/Steam Profile Picture.ico" type="image/ico" />
-</head>
+<html>  
+    <head>
+        <title>Calvin Smith</title>
+        <link rel="stylesheet" href="stlye/main.css">
+        <link rel="shortcut icon" href="photos/icon.ico" type="image/x-icon" />
+        <link rel="icon" href="photos/icon.ico" type="image/ico" />
+    </head>
 
-<body>
-  <header>
-    <nav>
-      <h1><a href="https://smit2664.github.io/personal-website/">C A L V I N  S M I T H</a></h1>
+    <body>  
+        <header>
+            <div class="header-bar">
+                <a href="index.html" class="logo">Calvin Smith</a>
+                <nav>
+                    <ul>
+                        <li class="navigation"><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li class="navigation"><a href="pages/projects.html">Projects</a></li>
+                        <li class="navigation"><a href="pages/prints.html">Prints</a></li>
+                        <li class="navigation"><a href="pages/about.html">About</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
+                </nav>
+            </div>  
 
-      <ul class="desktop-nav">
-        <li><a href="tabs/about.html">ABOUT</a></li>
-        <li><a href="tabs/projects.html">PROJECTS</a></li>
-        <li><a href="tabs/prints.html">PRINTS</a></li>
-      </ul>
-      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
-    </nav>  
-	  
-	<ul class="mobile-dropdown" id="mobileMenu">
-          <li><a href="tabs/about.html">ABOUT</a></li>
-          <li><a href="tabs/projects.html">PROJECTS</a></li>
-          <li><a href="tabs/prints.html">PRINTS</a></li>
-        </ul>
-  </header>
+            <section class="landing">
+                <b>CHASE YOUR IMAGINATION</b>
+                <div class="box"><a href="pages/portfolio.html"><b>E X P L O R E</b></a></div>
+            </section>
+        </header>
 
-<!-- Thumbnails are 3x2 and 5% resolution - Full Images are at 10% resolution -->
-  <div class="container">
-    <div class="grid">
-      <img src="photos/t01.jpg" alt="Thumb 1" onclick="openModal(0)" />
-      <img src="photos/t02.jpg" alt="Thumb 2" onclick="openModal(1)" />
-      <img src="photos/t03.jpg" alt="Thumb 3" onclick="openModal(2)" />
-      <img src="photos/t04.jpg" alt="Thumb 4" onclick="openModal(3)" />
-      <img src="photos/t05.jpg" alt="Thumb 5" onclick="openModal(4)" />
-      <img src="photos/t06.jpg" alt="Thumb 6" onclick="openModal(5)" />
-      <img src="photos/t07.jpg" alt="Thumb 7" onclick="openModal(6)" />
-      <img src="photos/t08.jpg" alt="Thumb 8" onclick="openModal(7)" />
-      <img src="photos/t09.jpg" alt="Thumb 9" onclick="openModal(8)" />
-      <img src="photos/t10.jpg" alt="Thumb 10" onclick="openModal(9)" />
-      <img src="photos/t11.jpg" alt="Thumb 11" onclick="openModal(10)" />
-      <img src="photos/t12.jpg" alt="Thumb 12" onclick="openModal(11)" />
-      <img src="photos/t13.jpg" alt="Thumb 13" onclick="openModal(12)" />
-      <img src="photos/t14.jpg" alt="Thumb 14" onclick="openModal(13)" />
-      <img src="photos/t15.jpg" alt="Thumb 15" onclick="openModal(14)" />
-	  <img src="photos/t16.jpg" alt="Thumb 16" onclick="openModal(15)" />
-	  <img src="photos/t17.jpg" alt="Thumb 17" onclick="openModal(16)" />
-	  <img src="photos/t18.jpg" alt="Thumb 18" onclick="openModal(17)" />
-	  <img src="photos/t19.jpg" alt="Thumb 19" onclick="openModal(18)" />
-	  <img src="photos/t20.jpg" alt="Thumb 20" onclick="openModal(19)" />
-	  <img src="photos/t21.jpg" alt="Thumb 21" onclick="openModal(20)" />
-	  <img src="photos/t22.jpg" alt="Thumb 22" onclick="openModal(21)" />
-	  <img src="photos/t23.jpg" alt="Thumb 23" onclick="openModal(22)" />
-	  <img src="photos/t24.jpg" alt="Thumb 24" onclick="openModal(23)" />
-	  <img src="photos/t25.jpg" alt="Thumb 25" onclick="openModal(24)" />
-	  <img src="photos/t26.jpg" alt="Thumb 26" onclick="openModal(25)" />
-	  <img src="photos/t27.jpg" alt="Thumb 27" onclick="openModal(26)" />
-	  <img src="photos/t28.jpg" alt="Thumb 28" onclick="openModal(27)" />
-    </div>
-  </div>
+        <section class="about">
+            <div class="about-content">
+                <div class="about-header"><b>About</b></div>
+                <div class="about-text">
+                    If you're visiting this page, you're 
+                    likely here because you're searching 
+                    for a random sentence. Sometimes a random 
+                    word just isn't enough, and that is where the 
+                    random sentence generator comes into play. 
+                    By inputting the desired number, you can make 
+                    a list of as many random sentences as you want or need. 
+                    Producing random sentences can be helpful in a number of different ways.
+                </div>
+                <div class="bottom-box"><a href="pages/about.html"><b><u>Learn More</u></b></a></div>
+            </div>
+            <figure><img src="photos/About.jpg" alt="About"></figure>
+        </section>
 
-  <div class="modal" id="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-    <img class="modal-image" src="" alt="Enlarged image" />
-    <p class="modal-caption"></p>
-    <span class="next" onclick="changeSlide(1)">&#10095;</span>
-  </div>
+        <footer>
+            <div class="footer-banner">
+                <div class="bottom-landing"><b><i>touching grass since '99</i></b></div>
+            </div>
 
-  <footer>
-    <h2>FOLLOW ME :D</h2>
-      <a href="https://www.instagram.com/calvintsmith/">
-	      <img class="bottom" src="photos/instagram.png" alt="Instagram"></a>      
-      <a href="https://www.linkedin.com/in/calvin-smith-855a13180/">
-	      <img class="bottom" src="photos/linkedin.png" alt="LinkedIn"></a>
-  </footer>
-	
-  <script src="script.js" defer></script>
-	
-</body>
+            <div class="footer-gallery">
+                <img src="photos/1.jpg" alt="">
+                <img src="photos/2.jpg" alt="">
+                <img src="photos/3.jpg" alt="">
+                <img src="photos/4.jpg" alt="">
+                <img src="photos/5.jpg" alt="">
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/calvintsmith/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="photos/Instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/calvin-smith-855a13180" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="photos/Linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <p>FOLLOW ME :D</p>
+                <p class="about-text">All content © Calvin Smith 2026</p>
+            </div>
+        </footer>
+
+        <script src="script.js" defer></script>
+        <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
+
+    </body>
 </html>
-
-
-
-
