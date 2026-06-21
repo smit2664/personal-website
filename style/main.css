@@ -30,7 +30,7 @@ body{
 header{
     background: var(--color-black);
     background-attachment: fixed;
-    background-image: url("photos/Header.jpg");
+    background-image: url("../photos/Header.jpg");
     background-size: cover;
     background-position: center;
     font-family: var(--font-serif);
@@ -229,7 +229,7 @@ nav ul a:hover{
 .footer-banner{
     background: var(--color-black);
     background-attachment: fixed;
-    background-image: url("photos/Header2a.jpg");
+    background-image: url("../photos/Header2a.jpg");
     background-size: cover;
     background-position: center;
     height: 750px;
