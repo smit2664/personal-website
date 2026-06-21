@@ -170,6 +170,8 @@ nav ul a:hover{
     color: var(--color-white);
     font-family: var(--font-display);
     font-size: 65px;
+    padding: 0 20px;
+    width: 100%;
 }
 
 .box{
