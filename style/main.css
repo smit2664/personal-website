@@ -81,11 +81,11 @@ nav li:last-child{
 }
 
 nav ul:hover a{
-    color: var(--color-black);
+    color: var(--color-gray-light);
 }
 
 nav ul a:hover{
-    color: var(--color-gray-light);
+    color: var(--color-black);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
