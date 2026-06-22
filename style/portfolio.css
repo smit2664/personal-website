@@ -1,0 +1,179 @@
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue: rgb(51, 51, 248); 
+    --color-gray: gray;
+    --color-gray-light: rgb(192, 192, 192);
+    --color-accent: red;
+    --font-sans: Arial, Helvetica, sans-serif;
+    --font-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --font-display: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-body: 'Times New Roman', Times, serif;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: var(--color-white);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header{
+    background: var(--color-white);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--font-serif);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    color: var(--color-black);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.landing{
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav li:last-child{
+    margin-right: 0;
+}
+
+.navigation a{
+    color: var(--color-white);
+    text-transform: uppercase;
+    transition: color 0.35s ease;
+}
+
+nav ul:hover a{
+    color: var(--color-black);
+}
+
+nav ul a:hover{
+    color: var(--color-white);
+}
+
+/* MOBILE DROPDOWN NAVIGATION */
+.mobile-menu-toggle{
+    display: none;
+    color: var(--color-black);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* Overlay */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+.nav-overlay.show {
+    display: block;
+}
+
+/* Slide-out drawer */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    .header-bar nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 25%;
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 100;
+        padding-top: 60px;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+    }
+
+    .header-bar nav ul.show {
+        transform: translateX(0);
+    }
+
+    .header-bar nav ul li {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-bar nav ul li a {
+        display: block;
+        padding: 1rem;
+        font-size: 15px;
+        text-align: Left;
+    }
+
+    .header-bar {
+        padding: 1rem;
+    }
+    
+    .footer-banner {
+        height: 90vh;
+        height: 90dvh;
+        text-align: center;
+    }
+
+    .footer-banner .bottom-landing {
+        font-size: 5vw;
+        text-align: center;
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+/* PORTFOLION LOCATIONS */
+.gallery{
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.gallery img{
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
