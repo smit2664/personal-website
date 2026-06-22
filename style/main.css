@@ -236,6 +236,11 @@ nav ul a:hover{
     margin-bottom: 16px;
 }
 
+.about figure{
+    height: 50vh;
+    height: 50dvh; 
+}
+
 .bottom-box{
     display: inline-block;
 }
