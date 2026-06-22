@@ -214,6 +214,8 @@ nav ul a:hover{
     padding: 40px 20px;
     display: flex;
     flex-direction: row;
+    height: 60vh;
+    height: 60dvh;
     align-items: center;
     gap: 20px;
     font-family: var(--font-serif);
