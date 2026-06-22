@@ -71,17 +71,17 @@ nav li:last-child{
 }
 
 .navigation a{
-    color: var(--color-white);
+    color: var(--color-black);
     text-transform: uppercase;
     transition: color 0.35s ease;
 }
 
 nav ul:hover a{
-    color: var(--color-black);
+    color: var(--color-gray-light);
 }
 
 nav ul a:hover{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
