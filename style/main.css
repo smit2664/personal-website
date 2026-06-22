@@ -54,7 +54,7 @@ header{
 }
 
 .logo{
-    color: var(--color-white);
+    color: var(--color-black);
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -75,17 +75,17 @@ nav li:last-child{
 }
 
 .navigation a{
-    color: var(--color-white);
+    color: var(--color-black);
     text-transform: uppercase;
     transition: color 0.35s ease;
 }
 
 nav ul:hover a{
-    color: var(--color-gray-light);
+    color: var(--color-black);
 }
 
 nav ul a:hover{
-    color: var(--color-white);
+    color: var(--color-gray-light);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
