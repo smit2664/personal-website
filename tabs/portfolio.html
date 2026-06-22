@@ -1,41 +1,59 @@
+<!-- Right click index.html and open with live -->
 <!DOCTYPE html>
 <html>  
     <head>
-        <title>Calvin Smith</title>
-        <link rel="stylesheet" href="../tab.css">
-        <link rel="shortcut icon" href="../photos/icon.ico" type="image/x-icon" />
-        <link rel="icon" href="../photos/icon.ico" type="image/ico" />
+        <title>Local</title>
+        <link rel="stylesheet" href="../style/tab.css">
+        <link rel="shortcut icon" href="../photos/icon.png" type="image/png" />
+        <link rel="icon" href="../photos/icon.png" type="image/png" />
     </head>
 
     <body>  
         <header>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="prints.html">Prints</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-            <h1>Portfolio</h1>
+            <div class="header-bar">
+                <a href="../index.html" class="logo">Calvin Smith</a>
+                <nav>
+                    <ul>
+                        <li class="navigation"><a href="../index.html">Home</a></li>
+                        <li class="navigation"><a href="projects.html">Projects</a></li>
+                        <li class="navigation"><a href="prints.html">Prints</a></li>
+                        <li class="navigation"><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
+                </nav>
+            </div>
+
+            <section class="landing">
+                <h1>Portfolio</h1>
+            </section>
+            <section>
+                <div class="gallery">
+                    <li class="location"><a href="mi.html"><img src="../photos/1.jpg" alt="">Michigan</a></li>
+                    <li class="location"><a href="wy.html"><img src="../photos/2.jpg" alt="">Wyoming</a></li>
+                    <li class="location"><a href="wu.html"><img src="../photos/3.jpg" alt="">Europe</a></li>
+                    <li class="location"><a href="other.html"><img src="../photos/4.jpg" alt="">Other</a></li>
+                </div>
+            </section>
         </header>
-        <section class="feature">
-            <figure>
-                <img src="../photos/1.jpg" alt="Windmill">
-                <figcaption>Windmill in Denmark</figcaption>
-            </figure>
-            <figure>
-                <img src="../photos/3.jpg" alt="Old Faithful">
-                <figcaption>Old Faithful</figcaption>
-            </figure>
-            <figure>
-                <img src="../photos/4.jpg" alt="Windmills">
-                <figcaption>Windmills in Denmark</figcaption>
-            </figure>
-            
-        </section>
-        <section>Lower Section</section>
-        <footer>Footer</footer>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.instagram.com/calvintsmith/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="../photos/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/calvin-smith-855a13180" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="../photos/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <p>FOLLOW ME :D</p>
+                <p class="about-text">All content © Calvin Smith 2026</p>
+            </div>
+        </footer>
+
+        <script src="../script.js" defer></script>
+        <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
+
     </body>
 </html>
