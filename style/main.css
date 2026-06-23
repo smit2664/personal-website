@@ -80,12 +80,14 @@ nav li:last-child{
     transition: color 0.35s ease;
 }
 
+/* PARENT LINKS ARE HOVERED */
 nav ul:hover a{
     color: var(--color-white);
 }
 
+/* SPECIFIC LINK IS HOVERED */
 nav ul a:hover{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
