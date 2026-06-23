@@ -91,7 +91,7 @@ nav ul a:hover{
 /* MOBILE DROPDOWN NAVIGATION */
 .mobile-menu-toggle{
     display: none;
-    color: var(--color-white);
+    color: var(--color-black);
     cursor: pointer;
     font-size: 25px;
     touch-action: manipulation;
