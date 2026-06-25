@@ -55,14 +55,15 @@ header{
 
 .logo{
     color: var(--color-white);
-    font-size: 24px;
+    font-size: 36px;
     font-family: var(--font-display);
+    padding: 0px 50px 0px 0px;
     text-transform: uppercase;
 }
 
 nav ul{
     margin: 0;
-    padding: 0;
+    padding: 0px 50px 0px 0px;
     list-style-type: none;
     display: flex;
 }
