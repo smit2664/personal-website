@@ -50,14 +50,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .logo{
     color: var(--color-white);
     font-size: 36px;
     font-family: var(--font-display);
-    padding: 0px 50px 0px 0px;
     text-transform: uppercase;
 }
 
