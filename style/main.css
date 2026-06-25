@@ -54,8 +54,9 @@ header{
 }
 
 .logo{
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 24px;
+    font-family: var(--font-display);
     text-transform: uppercase;
 }
 
@@ -75,19 +76,19 @@ nav li:last-child{
 }
 
 .navigation a{
-    color: var(--color-black);
+    color: var(--color-white);
     text-transform: uppercase;
     transition: color 0.35s ease;
 }
 
 /* PARENT LINKS ARE HOVERED */
 nav ul:hover a{
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 /* SPECIFIC LINK IS HOVERED */
 nav ul a:hover{
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
