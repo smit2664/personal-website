@@ -250,6 +250,7 @@ nav ul a:hover{
     padding: 18px 30px;
     transition: background-color 0.4s ease, color 0.4s ease;
     text-transform: uppercase;
+
 /* ABOUT */
 .about {
     background: var(--color-white);
@@ -278,21 +279,6 @@ nav ul a:hover{
     max-width: 400px;
     max-height: 50vh;
     max-height: 50dvh;
-}
-
-/* Stack vertically on mobile */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        min-height: unset;
-        padding: 32px 20px;
-    }
-
-    .about figure img {
-        max-width: 85vw;
-        max-height: 40vh;
-        max-height: 40dvh;
-    }
 }
 
 /* FOOTER */
