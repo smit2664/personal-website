@@ -171,13 +171,6 @@ nav ul a:hover{
     }
 }
 
-/* Tighten the drawer further on very narrow phones (SE, mini) */
-@media (max-width: 380px) {
-    .header-bar nav ul {
-        width: 75%;
-    }
-}
-
 /* LANDING */
 .landing{
     flex: 1;
@@ -250,36 +243,6 @@ nav ul a:hover{
     padding: 18px 30px;
     transition: background-color 0.4s ease, color 0.4s ease;
     text-transform: uppercase;
-
-/* ABOUT */
-.about {
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    font-family: var(--font-serif);
-    /* Removed fixed height — let content breathe */
-    min-height: 60vh;
-    min-height: 60dvh;
-}
-
-.about figure {
-    flex: 1;
-    margin: 0;
-    text-align: center;
-}
-
-.about figure img {
-    object-fit: contain;   /* ← was missing semicolon, breaking height */
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    max-height: 50vh;
-    max-height: 50dvh;
-}
 
 /* FOOTER */
 .footer-banner{
