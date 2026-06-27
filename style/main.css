@@ -159,7 +159,7 @@ nav ul a:hover{
         text-align: left;
     }
     .header-bar nav ul li a:hover {
-        color: var(--color-white);
+        color: var(--color-black);
     }
     
     .header-bar {
