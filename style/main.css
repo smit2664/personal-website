@@ -259,15 +259,15 @@ nav ul a:hover{ /* SPECIFIC LINK IS HOVERED */
 /* ABOUT MOBILE */
 @media (max-width: 768px) {
     .about {
-        flex-direction: column;
         min-height: unset;
-        padding: 32px 20px;
+        padding: 20px;
+        gap: 10px;
     }
 
-    .about figure img {
-        max-width: 90vw;
-        max-height: 45vh;
-        max-height: 45dvh;
+    .about {
+        min-height: unset;
+        padding: 20px;
+        gap: 10px;
     }
 }
 
