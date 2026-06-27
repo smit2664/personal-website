@@ -117,9 +117,13 @@ nav ul a:hover{
 
 /* Slide-out drawer */
 @media (max-width: 768px) {
+    .logo {
+        padding-left: 0;
+    }
     .mobile-menu-toggle {
         display: block;
     }
+    
     .header-bar nav ul {
         position: fixed;
         top: 0;
@@ -155,7 +159,7 @@ nav ul a:hover{
         text-align: left;
     }
     .header-bar nav ul li a:hover {
-        color: var(--color-gray-white);
+        color: var(--color-white);
     }
     
     .header-bar {
