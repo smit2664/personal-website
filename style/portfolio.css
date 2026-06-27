@@ -196,19 +196,6 @@ nav ul a:hover{
 }
 
 /* FOOTER */
-.footer-banner {
-    background: var(--color-black);
-    background-attachment: fixed;
-    background-image: url("../photos/B.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    height: 90dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .bottom-landing {
     color: var(--color-white);
     font-family: 'Times New Roman', Times, serif;
