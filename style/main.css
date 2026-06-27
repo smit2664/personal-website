@@ -88,7 +88,7 @@ nav ul:hover a{ /* PARENT LINKS ARE HOVERED */
 }
 
 nav ul a:hover{ /* SPECIFIC LINK IS HOVERED */
-    color: var(--color-black);
+    color: var(--color-gray);
 }
 
 /* MOBILE DROPDOWN NAVIGATION */
