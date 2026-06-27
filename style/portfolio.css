@@ -143,7 +143,11 @@ nav ul a:hover{
         font-size: 15px;
         text-align: Left;
     }
-
+    
+    .header-bar nav ul li a:hover {
+        color: var(--color-black);
+    }
+    
     .header-bar {
         padding: 1rem;
     }
