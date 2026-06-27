@@ -151,19 +151,6 @@ nav ul a:hover{
     .header-bar {
         padding: 1rem;
     }
-    
-    .footer-banner {
-        height: 90vh;
-        height: 90dvh;
-        text-align: center;
-    }
-
-    .footer-banner .bottom-landing {
-        font-size: 5vw;
-        text-align: center;
-        padding: 0 20px;
-        width: 100%;
-    }
 }
 
 /* PORTFOLION LOCATIONS */
