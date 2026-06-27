@@ -204,14 +204,14 @@ nav ul a:hover{
 }
 
 /* ABOUT */
-.about{
+.about {
     background: var(--color-white);
     color: var(--color-black);
     padding: 40px 20px;
     display: flex;
     flex-direction: row;
-    height: 60vh;
-    height: 60dvh;
+    min-height: 60vh;
+    min-height: 60dvh;
     align-items: center;
     gap: 20px;
     font-family: var(--font-serif);
@@ -232,6 +232,38 @@ nav ul a:hover{
     margin-bottom: 16px;
 }
 
+.about figure {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about figure img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 55vh;
+    max-height: 55dvh;
+    object-fit: cover;
+}
+
+/* ABOUT MOBILE */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        min-height: unset;
+        padding: 32px 20px;
+    }
+
+    .about figure img {
+        max-width: 90vw;
+        max-height: 45vh;
+        max-height: 45dvh;
+    }
+}
+
+/* BOTTOM BOX */
 .bottom-box{
     display: inline-block;
 }
