@@ -46,7 +46,7 @@ header{
 }
 
 .logo{
-    color: var(--color-gray);
+    color: var(--color-black);
     display: inline-block;
     font-family: var(--font-serif);
     font-size: 36px;
@@ -81,13 +81,13 @@ nav li:last-child{
 }
 
 .navigation a{
-    color: var(--color-gray);
+    color: var(--color-black);
     text-transform: uppercase;
     transition: color 0.35s ease;
 }
 
 nav ul:hover a{
-    color: var(--color-gray-light);
+    color: var(--color-gray);
 }
 
 nav ul a:hover{
