@@ -290,7 +290,7 @@ nav ul a:hover{
 .footer-banner{
     background: var(--color-black);
     background-attachment: fixed;
-    background-image: url("../photos/B.jpg");
+    background-image: url("../photos/P.jpg");
     background-size: cover;
     background-position: center;
     height: 90vh;
