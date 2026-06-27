@@ -158,7 +158,7 @@ nav ul a:hover{
     background: var(--color-white);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 15px;
     padding: 75px;
     list-style-type: none;
 }
