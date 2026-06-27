@@ -55,6 +55,7 @@ header{
 }
 .landing{
     color: var(--color-black);
+    font-family: var(--font-display);
     font-size: 65px;
     text-transform: uppercase;
 }
