@@ -56,7 +56,7 @@ header{
 .logo{
     color: var(--color-white);
     font-size: 36px;
-    font-family: var(--font-display);
+    font-family: var(--font-serif);
     text-transform: uppercase;
 }
 
