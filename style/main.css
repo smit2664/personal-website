@@ -35,7 +35,7 @@ body.menu-open{
 header{
     background: var(--color-black);
     background-attachment: fixed;
-    background-image: url("../photos/A.jpg");
+    background-image: url("../photos/B.jpg");
     background-size: cover;
     background-position: center;
     font-family: var(--font-serif);
