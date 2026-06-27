@@ -47,8 +47,11 @@ header{
 
 .logo{
     color: var(--color-black);
-    font-size: 24px;
+    display: inline-block;
+    font-family: var(--font-serif);
+    font-size: 36px;
     text-transform: uppercase;
+    padding-left: 50px;
 }
 .landing{
     color: var(--color-black);
@@ -57,7 +60,7 @@ header{
 
 nav ul{
     margin: 0;
-    padding: 0;
+    padding: 0px 50px 0px 0px;
     list-style-type: none;
     display: flex;
 }
