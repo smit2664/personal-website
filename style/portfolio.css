@@ -87,7 +87,7 @@ nav li:last-child{
 }
 
 nav ul:hover a{
-    color: var(--color-gray);
+    color: var(--color-gray-light);
 }
 
 nav ul a:hover{
