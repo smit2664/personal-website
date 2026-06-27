@@ -213,7 +213,7 @@ nav ul a:hover{ /* SPECIFIC LINK IS HOVERED */
 
 /* ABOUT */
 .about {
-    background: var(--color-white);
+    background: rgb(252,252,252);
     color: var(--color-black);
     padding: 40px 20px;
     display: flex;
