@@ -119,6 +119,11 @@ nav ul a:hover{
     .mobile-menu-toggle {
         display: block;
     }
+
+    .logo{
+        padding-left:0;
+    }
+    
     .header-bar nav ul {
         position: fixed;
         top: 0;
