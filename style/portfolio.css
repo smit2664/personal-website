@@ -62,6 +62,7 @@ header{
 
 .landing h1{
     margin: 100px 0 0 0;
+    padding-bottom: 0;
 }
 
 nav ul{
@@ -173,7 +174,7 @@ nav ul a:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 30px 75px 75px 75px;
+    padding: 20px 75px 75px 75px; /* Adjusts padding to the portfolio header and to the edges of the page */
     list-style-type: none;
 }
 
