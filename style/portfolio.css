@@ -171,7 +171,7 @@ nav ul a:hover{
     background: var(--color-white);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 75px;
+    gap: 30px;
     padding: 75px;
     list-style-type: none;
 }
