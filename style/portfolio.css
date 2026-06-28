@@ -190,7 +190,7 @@ nav ul a:hover{
 }
 
 .gallery figcaption {
-    margin-top: 20px;
+    margin-top: 5px;
     font-family: var(--font-serif);
     font-size: 18px;
     text-transform: uppercase;
