@@ -193,7 +193,6 @@ nav ul a:hover{
     margin-top: 20px;
     font-family: var(--font-display);
     font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
     color: var(--color-black);
 }
