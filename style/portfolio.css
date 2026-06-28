@@ -49,14 +49,14 @@ header{
     color: var(--color-black);
     display: inline-block;
     font-family: var(--font-serif);
-    font-size: 36px;
+    font-size: 28px;
     text-transform: uppercase;
     padding-left: 50px;
 }
 .landing{
     color: var(--color-black);
     font-family: var(--font-display);
-    font-size: 65px;
+    font-size: 55px;
     text-transform: uppercase;
 }
 
