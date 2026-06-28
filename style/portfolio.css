@@ -191,7 +191,7 @@ nav ul a:hover{
 
 .gallery figcaption {
     margin-top: 20px;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
