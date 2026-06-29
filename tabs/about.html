@@ -1,57 +1,51 @@
+<!-- Right click index.html and open with live -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calvin Smith</title>
-  <link rel="stylesheet" href="../style/tab.css" />
-  <link rel="shortcut icon" href="../photos/Steam Profile Picture.ico" type="image/x-icon" />
-  <link rel="icon" href="../photos/Steam Profile Picture.ico" type="image/ico" />
-</head>
+<html>  
+    <head>
+        <title>Calvin Smith</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../style/portfolio.css">
+        <link rel="shortcut icon" href="../photos/icon.png" type="image/png" />
+        <link rel="icon" href="../photos/icon.png" type="image/png" />
+    </head>
 
-<body>
-  <header>
-    <nav>
-      <h1><a href="https://smit2664.github.io/personal-website/">CALVIN SMITH</a></h1>
+    <body>  
+        <header>
+            <div class="header-bar">
+                <a href="../index.html" class="logo"><b>Calvin Smith</b></a>
+                <nav>
+                    <ul>
+                        <li class="navigation"><a href="../index.html">Home</a></li>
+                        <li class="navigation"><a href="projects.html">Projects</a></li>
+                        <li class="navigation"><a href="prints.html">Prints</a></li>
+                        <li class="navigation"><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
+                </nav>
+            </div>
+			
+            <section class="landing">
+                <b>coming soon</b>
+            </section>
 
-      <ul class="desktop-nav">
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="prints.html">PRINTS</a></li>
-      </ul>
-      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
-    </nav>  
-	  
-	<ul class="mobile-dropdown" id="mobileMenu">
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-          <li><a href="prints.html">PRINTS</a></li>
-        </ul>
-  </header>
+        <footer>            
+            <div class="social-links">
+                <a href="https://www.instagram.com/calvintsmith/" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="../photos/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/calvin-smith-855a13180" class="social-icon" target="_blank" rel="noopener noreferrer">
+                    <img src="../photos/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            
+            <div class="footer-info">
+                <p>FOLLOW ME :D</p>
+                <p>All content © Calvin Smith 2026</p>
+            </div>
+        </footer>
 
-  <main>
-    <h2>ABOUT ME</h2>
-    <hr class="solid">
-      <div class= "text-column"><br><br>  
-        <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-	       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-               blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p><br><br>
-	<p><img class="about" src="../photos/mi.jpg" alt="Instagram"></a></p><br><br>
-        <p>Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-	       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-               blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.</p>
-      </div>
-  </main>
+        <script src="../script.js" defer></script>
+        <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
 
-  <footer>
-    <h2>FOLLOW ME :D</h2>
-      <a href="https://www.instagram.com/calvintsmith/">
-	      <img class="bottom" src="../photos/instagram.png" alt="Instagram"></a>      
-      <a href="https://www.linkedin.com/in/calvin-smith-855a13180/">
-	      <img class="bottom" src="../photos/linkedin.png" alt="LinkedIn"></a>
-  </footer>
-
-<script src="tab-script.js" defer></script>
-  
-</body>
+    </body>
 </html>
