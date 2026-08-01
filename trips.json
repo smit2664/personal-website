@@ -1,27 +1,5 @@
 [
   {
-    "id": "apartment-2026-08-01",
-    "title": "Apartment",
-    "location": "Apartment",
-    "startDate": "2026-08-01",
-    "endDate": "2026-08-01",
-    "summary": "",
-    "entries": [
-      {
-        "date": "2026-08-01",
-        "title": "Test",
-        "conditions": "Test",
-        "body": "Test",
-        "photos": [
-          {
-            "type": "snapshot",
-            "src": "snapshots/2026-08-01-test-qalvk.jpg"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "sawtooth-2026-07",
     "title": "Sawtooth Range",
     "location": "Sawtooth Range, Idaho",
