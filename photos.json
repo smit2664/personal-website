@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ridge-dawn",
+    "src": "https://picsum.photos/seed/ridge-dawn/900/1100",
+    "title": "Ridge Line, Dawn",
+    "location": "Sawtooth Range",
+    "elevation": "8,200 ft",
+    "conditions": "-3°C · clear · calm"
+  },
+  {
+    "id": "fjord-fog",
+    "src": "https://picsum.photos/seed/fjord-fog/900/1100",
+    "title": "Fjord in Fog",
+    "location": "West Coast Sound",
+    "elevation": "sea level",
+    "conditions": "6°C · fog · light rain"
+  },
+  {
+    "id": "desert-dune",
+    "src": "https://picsum.photos/seed/desert-dune/900/1100",
+    "title": "Dune Field",
+    "location": "High Desert Basin",
+    "elevation": "3,900 ft",
+    "conditions": "18°C · clear · wind 20kt"
+  },
+  {
+    "id": "forest-mist",
+    "src": "https://picsum.photos/seed/forest-mist/900/1100",
+    "title": "Old Growth, Morning Mist",
+    "location": "North Slope Forest",
+    "elevation": "2,100 ft",
+    "conditions": "9°C · overcast · still"
+  },
+  {
+    "id": "coast-storm",
+    "src": "https://picsum.photos/seed/coast-storm/900/1100",
+    "title": "Storm Break",
+    "location": "Pacific Headland",
+    "elevation": "sea level",
+    "conditions": "11°C · squall clearing"
+  },
+  {
+    "id": "canyon-light",
+    "src": "https://picsum.photos/seed/canyon-light/900/1100",
+    "title": "Canyon Light",
+    "location": "Red Rock Canyon",
+    "elevation": "5,400 ft",
+    "conditions": "22°C · clear · dry"
+  }
+]
