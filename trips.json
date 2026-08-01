@@ -1,5 +1,27 @@
 [
   {
+    "id": "apartment-2026-08-01",
+    "title": "Apartment",
+    "location": "Apartment",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-01",
+    "summary": "",
+    "entries": [
+      {
+        "date": "2026-08-01",
+        "title": "Test",
+        "conditions": "Test",
+        "body": "Test",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-01-test-qalvk.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "sawtooth-2026-07",
     "title": "Sawtooth Range",
     "location": "Sawtooth Range, Idaho",
@@ -25,8 +47,15 @@
         "conditions": "-3°C · clear · calm",
         "body": "Broke clear on the third morning. Worth every hour of waiting — this is where the ridge-line shot came from.",
         "photos": [
-          { "type": "gallery", "id": "ridge-dawn" },
-          { "type": "snapshot", "src": "snapshots/2026-07-15-camp-sunrise.jpg", "caption": "Camp, right before the fog broke" }
+          {
+            "type": "gallery",
+            "id": "ridge-dawn"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-07-15-camp-sunrise.jpg",
+            "caption": "Camp, right before the fog broke"
+          }
         ]
       }
     ]
@@ -45,7 +74,10 @@
         "conditions": "6°C · fog · light rain",
         "body": "Some mornings the plan has to change with the weather. Leaned into the low visibility instead of fighting it.",
         "photos": [
-          { "type": "gallery", "id": "fjord-fog" }
+          {
+            "type": "gallery",
+            "id": "fjord-fog"
+          }
         ]
       },
       {
