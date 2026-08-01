@@ -254,7 +254,7 @@ function buildFieldlogMessage() {
   return `local time ${timeStr} · ${light}`;
 }
 
-function typeMessage(el, text, speed = 28) {
+function typeMessage(el, text, speed = 14) {
   let i = 0;
   el.textContent = "";
   const interval = setInterval(() => {
