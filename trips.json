@@ -5,7 +5,7 @@
     "location": "Apartment",
     "startDate": "2026-08-01",
     "endDate": "2026-08-01",
-    "summary": "Talking ben",
+    "summary": "Talking to ben",
     "entries": [
       {
         "date": "2026-08-01",
@@ -18,95 +18,6 @@
             "src": "snapshots/2026-08-01-test-o7yw4.jpg"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "sawtooth-2026-07",
-    "title": "Sawtooth Range",
-    "location": "Sawtooth Range, Idaho",
-    "startDate": "2026-07-12",
-    "endDate": "2026-07-15",
-    "summary": "Three days waiting for one clear sunrise over the ridge line.",
-    "entries": [
-      {
-        "date": "2026-07-12",
-        "title": "Arrival — fog rolls in early",
-        "conditions": "6°C · fog · calm",
-        "body": "Hiked in expecting a two-night stay. Fog held the ridge hostage by early afternoon."
-      },
-      {
-        "date": "2026-07-13",
-        "title": "Second morning, same fog",
-        "conditions": "4°C · fog · light wind",
-        "body": "No change overnight. Used the day to scout a lower vantage point as backup."
-      },
-      {
-        "date": "2026-07-15",
-        "title": "Clear break at last light",
-        "conditions": "-3°C · clear · calm",
-        "body": "Broke clear on the third morning. Worth every hour of waiting — this is where the ridge-line shot came from.",
-        "photos": [
-          {
-            "type": "gallery",
-            "id": "ridge-dawn"
-          },
-          {
-            "type": "snapshot",
-            "src": "snapshots/2026-07-15-camp-sunrise.jpg",
-            "caption": "Camp, right before the fog broke"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "west-coast-2026-06",
-    "title": "West Coast Sound",
-    "location": "West Coast Sound",
-    "startDate": "2026-06-01",
-    "endDate": "2026-06-03",
-    "summary": "The fog never lifted, so I shot the fog instead.",
-    "entries": [
-      {
-        "date": "2026-06-01",
-        "title": "Fjord in fog",
-        "conditions": "6°C · fog · light rain",
-        "body": "Some mornings the plan has to change with the weather. Leaned into the low visibility instead of fighting it.",
-        "photos": [
-          {
-            "type": "gallery",
-            "id": "fjord-fog"
-          }
-        ]
-      },
-      {
-        "date": "2026-06-03",
-        "title": "Last morning, brief clearing",
-        "conditions": "9°C · overcast · calm",
-        "body": "Fog thinned for about twenty minutes right at sunrise. Got one clean frame before it closed back in."
-      }
-    ]
-  },
-  {
-    "id": "red-rock-2026-03",
-    "title": "Red Rock Canyon",
-    "location": "Red Rock Canyon",
-    "startDate": "2026-03-10",
-    "endDate": "2026-03-11",
-    "summary": "Scouted a new canyon route for the fall shoulder season.",
-    "entries": [
-      {
-        "date": "2026-03-10",
-        "title": "New access trail",
-        "conditions": "18°C · clear · wind 20kt",
-        "body": "Found a route that puts the east wall in direct light about 40 minutes earlier than the main trail."
-      },
-      {
-        "date": "2026-03-11",
-        "title": "Test shoot on the new route",
-        "conditions": "22°C · clear · dry",
-        "body": "Confirmed the timing works. Planning to come back in October when the light angle is better."
       }
     ]
   }
