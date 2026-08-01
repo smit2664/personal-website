@@ -54,6 +54,18 @@
             "src": "snapshots/2026-08-01-wedding-08f3l.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-01",
+        "title": "Wedding",
+        "conditions": "",
+        "body": "We're coloring now!",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-01-wedding-s744z.jpg"
+          }
+        ]
       }
     ]
   }
