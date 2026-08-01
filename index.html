@@ -1,84 +1,128 @@
-<!-- Right click index.html and open with live -->
 <!DOCTYPE html>
-<html lang="en">  
-    <head>
-        <title>Calvin Smith</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="shortcut icon" href="photos/icon.png" type="image/png" />
-        <link rel="icon" href="photos/icon.png" type="image/png" />
-    </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calvin Smith — Landscape Photography</title>
+<meta name="description" content="Landscape and nature photography by [Your Name].">
 
-    <body>  
-        <header>
-            <div class="header-bar">
-                <a href="index.html" class="logo"><b>Calvin Smith</b></a>
-                <nav>
-                    <ul>
-                        <li class="navigation"><a href="index.html">Home</a></li>
-                        <li class="navigation"><a href="tabs/portfolio.html">Portfolio</a></li>
-                        <li class="navigation"><a href="tabs/projects.html">Projects</a></li>
-                        <li class="navigation"><a href="tabs/prints.html">Prints</a></li>
-                        <li class="navigation"><a href="tabs/about.html">About</a></li>
-                    </ul>
-                    <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
-                </nav>
-            </div>  
+<!-- Fonts: Fraunces (display), Work Sans (body), IBM Plex Mono (data/utility) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-            <section class="landing">
-                <b>CHASE YOUR IMAGINATION</b>
-                <div class="box"><a href="tabs/portfolio.html"><b>E X P L O R E</b></a></div>
-            </section>
-        </header>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <section class="about">
-            <div class="about-content">
-                <div class="about-header"><b>About</b></div>
-                <div class="about-text">
-                    If you're visiting this page, you're 
-                    likely here because you're searching 
-                    for a random sentence. Sometimes a random 
-                    word just isn't enough, and that is where the 
-                    random sentence generator comes into play. 
-                    By inputting the desired number, you can make 
-                    a list of as many random sentences as you want or need. 
-                    Producing random sentences can be helpful in a number of different ways.
-                </div>
-                <div class="bottom-box"><a href="tabs/about.html"><b><u>Learn More</u></b></a></div>
-            </div>
-            <figure><img src="photos/About.jpg" alt="About"></figure>
-        </section>
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="#top" class="nav__name">Calvin Smith</a>
+  <nav class="nav__links">
+    <a href="#work">work</a>
+    <a href="#log">log</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="nav__status" id="lightStatus">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">reading light…</span>
+  </div>
+</header>
 
-        <footer>
-            <div class="footer-banner">
-                <div class="bottom-landing"><b><i>touching grass since '99</i></b></div>
-            </div>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__image">
+    <img src="https://picsum.photos/seed/tetonrange/1600/1000" alt="Mountain range at dawn">
+  </div>
+  <div class="hero__content">
+    <p class="eyebrow">landscape &amp; nature photography</p>
+    <h1>Light finds the land<br>before anyone else does.</h1>
+    <p class="hero__sub">Field work in the mountains, coastlines, and quiet places in between. I show up before sunrise so you don't have to.</p>
+    <a href="#work" class="btn">view the work</a>
+  </div>
 
-            <div class="footer-gallery">
-                <img src="photos/1.jpg" alt="">
-                <img src="photos/2.jpg" alt="">
-                <img src="photos/3.jpg" alt="">
-                <img src="photos/4.jpg" alt="">
-                <img src="photos/5.jpg" alt="">
-            </div>
+  <!-- field log readout — the signature element -->
+  <div class="fieldlog" id="fieldlog">
+    <span class="fieldlog__prompt">$</span>
+    <span class="fieldlog__line" id="fieldlogLine"></span><span class="cursor">_</span>
+  </div>
+</section>
 
-            <div class="social-links">
-                <a href="https://www.instagram.com/calvintsmith/" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="photos/instagram.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/calvin-smith-855a13180" class="social-icon" target="_blank" rel="noopener noreferrer">
-                    <img src="photos/linkedin.png" alt="LinkedIn">
-                </a>
-            </div>
+<!-- ============ FEATURED WORK ============ -->
+<section class="work" id="work">
+  <div class="section__head">
+    <h2>selected work</h2>
+    <p class="section__note">// every frame logged with location, elevation, and conditions at capture</p>
+  </div>
 
-            <div class="footer-info">
-                <p>FOLLOW ME :D</p>
-                <p class="about-text">All content © Calvin Smith 2026</p>
-            </div>
-        </footer>
+  <div class="grid" id="galleryGrid">
+    <!-- Populated by script.js from the PHOTOS array below, but written here for no-JS fallback -->
+  </div>
+</section>
 
-        <script src="script.js" defer></script>
-        <div class="nav-overlay" onclick="toggleMobileMenu()"></div>
+<!-- ============ FIELD LOG / ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about__log">
+    <p class="about__entry"><span class="ts">entry 001</span> Started shooting on weekend hikes with a borrowed camera. Kept going back for the light, not the summit.</p>
+    <p class="about__entry"><span class="ts">entry 014</span> Learned to read weather like a second language. Storms make better photographs than clear skies ever will.</p>
+    <p class="about__entry"><span class="ts">entry 032</span> Now based out of [Your City], chasing shoulder-season light across [Your Region].</p>
+  </div>
+  <div class="about__text">
+    <h2>about</h2>
+    <p>I'm [Your Name], a landscape photographer working mostly at dawn, dusk, and the in-between hours most people sleep through. My process is slow: scout in daylight, return in the dark, wait.</p>
+    <p>This site is a running log of that work — where each image comes with the conditions it was made in, not just the finished frame.</p>
+    <a href="#contact" class="btn btn--outline">get in touch</a>
+  </div>
+</section>
 
-    </body>
+<!-- ============ LOG / LATEST ENTRIES ============ -->
+<section class="journal" id="log">
+  <div class="section__head">
+    <h2>field log</h2>
+    <p class="section__note">// recent entries from the field</p>
+  </div>
+  <div class="journal__list" id="journalList">
+    <!-- populated by script.js -->
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <h2>let's talk</h2>
+  <p>Prints, licensing, or a guided shoot — reach out below.</p>
+  <form class="contact__form" id="contactForm">
+    <div class="field">
+      <label for="name">name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="field">
+      <label for="email">email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="field">
+      <label for="message">message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn">
+      <span class="fieldlog__prompt">$</span> send message
+    </button>
+    <p class="contact__note" id="contactNote"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> [Your Name]. All images shot on location, never generated.</p>
+  <p class="footer__cursor">$ <span class="cursor">_</span></p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose">×</button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox__meta" id="lightboxMeta"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
