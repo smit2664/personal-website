@@ -30,6 +30,18 @@
             "src": "snapshots/2026-08-01-ben-is-a-nutsack-og9s2.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-01",
+        "title": "Bens favorite watch",
+        "conditions": "Idk",
+        "body": "Leaving for a wedding",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-01-bens-favorite-watch-tq2w6.jpg"
+          }
+        ]
       }
     ]
   }
