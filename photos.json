@@ -9,7 +9,7 @@
   },
   {
     "id": "fjord-fog",
-    "src": "photos/B.jpg",
+    "src": "photos/1.jpg",
     "title": "Fjord in Fog",
     "location": "West Coast Sound",
     "elevation": "sea level",
@@ -25,7 +25,7 @@
   },
   {
     "id": "forest-mist",
-    "src": "photos/P.jpg",
+    "src": "photos/B.jpg",
     "title": "Old Growth, Morning Mist",
     "location": "North Slope Forest",
     "elevation": "2,100 ft",
@@ -33,7 +33,7 @@
   },
   {
     "id": "coast-storm",
-    "src": "https://picsum.photos/seed/coast-storm/900/1100",
+    "src": "photos/1.jpg",
     "title": "Storm Break",
     "location": "Pacific Headland",
     "elevation": "sea level",
@@ -41,7 +41,7 @@
   },
   {
     "id": "canyon-light",
-    "src": "https://picsum.photos/seed/canyon-light/900/1100",
+    "src": "photos/P.jpg",
     "title": "Canyon Light",
     "location": "Red Rock Canyon",
     "elevation": "5,400 ft",
