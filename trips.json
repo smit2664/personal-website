@@ -42,6 +42,18 @@
             "src": "snapshots/2026-08-01-bens-favorite-watch-tq2w6.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-01",
+        "title": "Wedding",
+        "conditions": "Cloudy and some rain",
+        "body": "Wedding stuff. We're hungry",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-01-wedding-08f3l.jpg"
+          }
+        ]
       }
     ]
   }
