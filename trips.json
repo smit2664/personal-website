@@ -18,6 +18,18 @@
             "src": "snapshots/2026-08-01-test-o7yw4.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-01",
+        "title": "Ben is a nutsack",
+        "conditions": "Test",
+        "body": "Bens talking about bar hopping and how they drank too much",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-01-ben-is-a-nutsack-og9s2.jpg"
+          }
+        ]
       }
     ]
   }
