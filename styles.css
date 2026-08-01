@@ -306,50 +306,14 @@ h1, h2, h3 {
 }
 
 /* ============================================
-   ABOUT
+   JOURNAL
    ============================================ */
-.about {
+.journal {
   background: var(--bg-alt);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 0;
 }
 
-.about__log {
-  padding: 90px 50px;
-  border-right: 1px solid var(--line);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-.about__entry { margin: 0; }
-.ts {
-  display: block;
-  color: var(--moss);
-  margin-bottom: 6px;
-  letter-spacing: 0.03em;
-}
-
-.about__text {
-  padding: 90px 50px;
-}
-.about__text h2 { font-size: 1.8rem; margin-bottom: 20px; }
-.about__text p { color: var(--text-dim); margin-bottom: 18px; max-width: 460px; }
-
-@media (max-width: 900px) {
-  .about { grid-template-columns: 1fr; }
-  .about__log, .about__text { padding: 60px 24px; border-right: none; }
-  .about__log { border-bottom: 1px solid var(--line); }
-}
-
-/* ============================================
-   JOURNAL
-   ============================================ */
 .journal__list {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -435,7 +399,8 @@ h1, h2, h3 {
 .trip__entry-date {
   font-family: var(--font-mono);
   font-size: 0.74rem;
-  color: var(--text-faint);
+  color: var(--moss);
+  letter-spacing: 0.03em;
   padding-top: 2px;
 }
 .trip__entry-body { display: flex; flex-direction: column; gap: 4px; }
