@@ -114,6 +114,9 @@
           </span>
         </button>
         <div class="trip__entries" id="trip-entries-${i}" hidden>
+          <a href="location.html?trip=${encodeURIComponent(trip.id)}" class="trip__gallery-link">
+            view all photos from this trip →
+          </a>
           ${(trip.entries || []).map(entry => renderEntry(entry)).join("")}
         </div>
       `;
