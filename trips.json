@@ -1,5 +1,22 @@
 [
   {
+    "id": "wyoming-2026-08-02",
+    "title": "Wyoming",
+    "location": "Wyoming",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "summary": "Annual(ish) friends trip",
+    "entries": [
+      {
+        "date": "2026-08-02",
+        "title": "Test",
+        "conditions": "71°F · partly cloudy · dry · calm",
+        "body": "Test",
+        "photos": []
+      }
+    ]
+  },
+  {
     "id": "test-2026-08-02",
     "title": "Test",
     "location": "Test",
