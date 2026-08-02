@@ -1,16 +1,16 @@
 // ============================================================
 // LOCATION GALLERY PAGE
 //
-// Expects, per location, two things living in the "locations" folder,
-// named after the location itself (lowercase, spaces as dashes,
-// no date needed) — e.g. for a trip whose "location" field is
-// "Apartment":
-//   locations/apartment.json     — a manifest: ["photo1.jpg", "photo2.jpg", ...]
-//   locations/apartment/photo1.jpg  — the actual edited photo files
+// Expects, per location:
+//   locations/{location-slug}.json  — a manifest listing just the
+//     filenames, e.g. ["1.jpg", "2.jpg", "3.jpg"]
+//   photos/{filename}  — the actual photo files, living in the same
+//     shared top-level "photos" folder the rest of the site uses
+//     (not a separate subfolder per location)
 //
-// These are entirely separate from the field-log admin's snapshots —
-// this is for your polished, edited-at-home photos, organized by
-// location name.
+// These manifests are entirely separate from the field-log admin's
+// snapshots — this is for your polished, edited-at-home photos,
+// organized by location name.
 // ============================================================
 
 const params = new URLSearchParams(window.location.search);
@@ -130,7 +130,7 @@ if (!tripId) {
             return;
           }
           filenames.forEach(filename => {
-            addGridItem(`locations/${folder}/${filename}`, trip.title);
+            addGridItem(`photos/${filename}`, trip.title);
           });
         })
         .catch(() => {
