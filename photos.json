@@ -5,46 +5,46 @@
     "title": "Banff Overlook",
     "location": "Tunnel Mountain",
     "elevation": "5,500 ft",
-    "conditions": "55°F · Partly Cloudy · calm"
+    "conditions": "55°F · partly cloudy · calm"
   },
   {
-    "id": "fjord-fog",
+    "id": "mighty-mac",
     "src": "photos/mi.jpg",
-    "title": "Fjord in Fog",
-    "location": "West Coast Sound",
+    "title": "Mighty Mac",
+    "location": "Bridge View Park",
     "elevation": "sea level",
-    "conditions": "6°C · fog · light rain"
+    "conditions": "43°F · partly cloudy · windy"
   },
   {
-    "id": "desert-dune",
+    "id": "breisacher-münster-st-stephan",
     "src": "photos/E.jpg",
-    "title": "Dune Field",
-    "location": "High Desert Basin",
-    "elevation": "3,900 ft",
-    "conditions": "18°C · clear · wind 20kt"
+    "title": "Breisacher Münster St. Stephan",
+    "location": "Eckartsberg Obersevation",
+    "elevation": "700 ft",
+    "conditions": "80°F · partly cloudy · rain"
   },
   {
-    "id": "forest-mist",
+    "id": "mt-rundle",
     "src": "photos/B.jpg",
-    "title": "Old Growth, Morning Mist",
-    "location": "North Slope Forest",
-    "elevation": "2,100 ft",
-    "conditions": "9°C · overcast · still"
+    "title": "The 7 Sisters",
+    "location": "Harvie Heights, Alberta",
+    "elevation": "4,300 ft",
+    "conditions": "27°F · clear · calm"
   },
   {
-    "id": "coast-storm",
+    "id": "windmill",
     "src": "photos/4.jpg",
-    "title": "Storm Break",
-    "location": "Pacific Headland",
+    "title": "Windmill",
+    "location": "Unesco Werelderfgoed Kinderdijk",
     "elevation": "sea level",
-    "conditions": "11°C · squall clearing"
+    "conditions": "60°F · cloudy · rain · windy"
   },
   {
-    "id": "canyon-light",
+    "id": "grand-prismatic",
     "src": "photos/P.jpg",
-    "title": "Canyon Light",
-    "location": "Red Rock Canyon",
-    "elevation": "5,400 ft",
-    "conditions": "22°C · clear · dry"
+    "title": "Grand Prismatic",
+    "location": "Grand Prismatic Overlook, Yellowstone",
+    "elevation": "7,400 ft",
+    "conditions": "77°F · clear · dry"
   }
 ]
