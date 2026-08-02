@@ -1,5 +1,71 @@
 [
   {
+    "id": "test-2026-08-02",
+    "title": "Test",
+    "location": "Test",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "summary": "Test",
+    "entries": [
+      {
+        "date": "2026-08-02",
+        "title": "Test",
+        "conditions": "50°F · clear · partly cloudy · overcast · fog · rain",
+        "body": "Test",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-02-test-o54r4.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "grand-rapids-2026-08-02",
+    "title": "Grand rapids",
+    "location": "Grand rapids",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "summary": "Test",
+    "entries": [
+      {
+        "date": "2026-08-02",
+        "title": "Test",
+        "conditions": "50°F · dry · snow · clear",
+        "body": "Tesf",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-02-test-lyxny.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marshall-2026-08-02",
+    "title": "Marshall",
+    "location": "Marshall",
+    "startDate": "2026-08-02",
+    "endDate": "2026-08-02",
+    "summary": "Band camp",
+    "entries": [
+      {
+        "date": "2026-08-02",
+        "title": "Getting ready",
+        "conditions": "67°F · overcast · calm",
+        "body": "Test",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-02-getting-ready-90tjw.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "apartment-2026-08-01",
     "title": "Apartment",
     "location": "Apartment",
