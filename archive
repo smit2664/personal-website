@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Log Archive</title>
+<meta name="description" content="Full archive of field log entries by Calvin and friends.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="index.html#top" class="nav__name">Calvin Smith</a>
+  <nav class="nav__links">
+    <a href="index.html#work">work</a>
+    <a href="index.html#log">log</a>
+    <a href="index.html#contact">contact</a>
+  </nav>
+</header>
+
+<!-- ============ ARCHIVE HEADER ============ -->
+<section class="journal" id="archive-top">
+  <div class="section__head">
+    <h2>field log archive</h2>
+    <p class="section__note">// every location, every entry — <a href="index.html#log" class="section__note-link">← back to recent</a></p>
+  </div>
+  <div class="journal__list" id="journalList">
+    <!-- populated by journal.js, no limit set = shows everything -->
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> [Your Name]. All images shot on location, never generated.</p>
+  <p class="footer__cursor">$ <span class="cursor">_</span></p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose">×</button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox__meta" id="lightboxMeta"></div>
+</div>
+
+<script src="journal.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
