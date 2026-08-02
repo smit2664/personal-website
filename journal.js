@@ -25,6 +25,18 @@
     return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
   }
 
+  // Turns a location name into a clean, date-free folder/file slug,
+  // e.g. "Apartment" -> "apartment", "Red Rock Canyon" -> "red-rock-canyon".
+  // Used only for matching up the locations/ photo folder — separate
+  // from the trip's internal id (which the admin app still generates
+  // with a date suffix under the hood).
+  function slugify(str) {
+    return (str || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
   function formatDateRange(start, end) {
     const startD = new Date(start + "T00:00:00");
     const endD = new Date(end + "T00:00:00");
@@ -114,7 +126,7 @@
           </span>
         </button>
         <div class="trip__entries" id="trip-entries-${i}" hidden>
-          <a href="location.html?trip=${encodeURIComponent(trip.id)}" class="trip__gallery-link">
+          <a href="location.html?trip=${encodeURIComponent(slugify(trip.location))}" class="trip__gallery-link">
             view all photos from this trip →
           </a>
           ${(trip.entries || []).map(entry => renderEntry(entry)).join("")}
