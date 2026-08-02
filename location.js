@@ -1,16 +1,29 @@
 // ============================================================
 // LOCATION GALLERY PAGE
 //
-// Expects, per trip, two things living in the "locations" folder:
-//   locations/{tripId}.json     — a manifest: ["photo1.jpg", "photo2.jpg", ...]
-//   locations/{tripId}/photo1.jpg  — the actual edited photo files
+// Expects, per location, two things living in the "locations" folder,
+// named after the location itself (lowercase, spaces as dashes,
+// no date needed) — e.g. for a trip whose "location" field is
+// "Apartment":
+//   locations/apartment.json     — a manifest: ["photo1.jpg", "photo2.jpg", ...]
+//   locations/apartment/photo1.jpg  — the actual edited photo files
 //
 // These are entirely separate from the field-log admin's snapshots —
-// this is for your polished, edited-at-home photos, organized by trip.
+// this is for your polished, edited-at-home photos, organized by
+// location name.
 // ============================================================
 
 const params = new URLSearchParams(window.location.search);
 const tripId = params.get("trip");
+
+// Same slug logic as journal.js — turns a location name into a
+// clean, date-free folder name, e.g. "Apartment" -> "apartment".
+function slugify(str) {
+  return (str || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
 
 const locationTitle = document.getElementById("locationTitle");
 const locationMeta = document.getElementById("locationMeta");
@@ -91,11 +104,11 @@ if (!tripId) {
       return res.json();
     })
     .then(trips => {
-      const trip = trips.find(t => t.id === tripId);
+      const trip = trips.find(t => slugify(t.location) === tripId);
 
       if (!trip) {
         locationTitle.textContent = "Location not found";
-        showEmptyState("Couldn't find that trip in trips.json.");
+        showEmptyState("Couldn't find that location in trips.json.");
         return;
       }
 
@@ -104,8 +117,9 @@ if (!tripId) {
       locationSummary.textContent = trip.summary || "";
       document.title = `${trip.title} — [Your Name]`;
 
-      // now load this trip's photo manifest
-      return fetch(`locations/${tripId}.json`)
+      // now load this location's photo manifest
+      const folder = slugify(trip.location);
+      return fetch(`locations/${folder}.json`)
         .then(res => {
           if (!res.ok) throw new Error(`No manifest yet (HTTP ${res.status})`);
           return res.json();
@@ -116,7 +130,7 @@ if (!tripId) {
             return;
           }
           filenames.forEach(filename => {
-            addGridItem(`locations/${tripId}/${filename}`, trip.title);
+            addGridItem(`locations/${folder}/${filename}`, trip.title);
           });
         })
         .catch(() => {
