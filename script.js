@@ -4,7 +4,6 @@
 // field-log entries can link back to it.
 // ============================================
 let PHOTOS = [];
-let PHOTOS_BY_ID = {};
 
 // ============================================
 // RENDER GALLERY
@@ -35,170 +34,29 @@ function renderGallery(photos) {
 }
 
 // ============================================
-// RENDER JOURNAL — loaded from trips.json
-// Each trip can contain multiple entries; trips render as
-// expandable accordion rows.
+// RENDER JOURNAL — moved to journal.js
+// (shared between this homepage and archive.html)
 // ============================================
-const journalList = document.getElementById("journalList");
-
-function formatDate(isoString) {
-  const d = new Date(isoString + "T00:00:00");
-  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
-}
-
-function formatDateRange(start, end) {
-  const startD = new Date(start + "T00:00:00");
-  const endD = new Date(end + "T00:00:00");
-  const sameMonth = startD.getMonth() === endD.getMonth() && startD.getFullYear() === endD.getFullYear();
-  const startStr = startD.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  const endStr = sameMonth
-    ? endD.toLocaleDateString("en-US", { day: "numeric", year: "numeric" })
-    : endD.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-  return `${startStr} – ${endStr}`;
-}
-
-function renderTrips(trips) {
-  journalList.innerHTML = "";
-
-  trips.forEach((trip, i) => {
-    const wrapper = document.createElement("div");
-    wrapper.className = "trip";
-
-    const entryCount = trip.entries ? trip.entries.length : 0;
-
-    wrapper.innerHTML = `
-      <button class="trip__header" aria-expanded="false" aria-controls="trip-entries-${i}">
-        <span class="trip__caret">▸</span>
-        <span class="trip__info">
-          <span class="trip__title">${trip.title}</span>
-          <span class="trip__summary">${trip.summary || ""}</span>
-        </span>
-        <span class="trip__meta">
-          <span class="trip__dates">${formatDateRange(trip.startDate, trip.endDate)}</span>
-          <span class="trip__count">${entryCount} ${entryCount === 1 ? "entry" : "entries"}</span>
-        </span>
-      </button>
-      <div class="trip__entries" id="trip-entries-${i}" hidden>
-        ${(trip.entries || []).map((entry, j) => renderEntry(entry, i, j)).join("")}
-      </div>
-    `;
-
-    const header = wrapper.querySelector(".trip__header");
-    const entriesEl = wrapper.querySelector(".trip__entries");
-
-    header.addEventListener("click", () => {
-      const isOpen = header.getAttribute("aria-expanded") === "true";
-      header.setAttribute("aria-expanded", String(!isOpen));
-      entriesEl.hidden = isOpen;
-      wrapper.classList.toggle("trip--open", !isOpen);
-    });
-
-    journalList.appendChild(wrapper);
-  });
-
-  // wire up per-entry photo-strip toggles and thumbnail clicks
-  // (delegated once, after all entries exist in the DOM)
-  journalList.querySelectorAll(".entry-photos__more").forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const strip = btn.closest(".entry-photos");
-      strip.classList.toggle("entry-photos--expanded");
-      const hiddenCount = strip.querySelectorAll(".entry-photos__thumb--extra").length;
-      btn.textContent = strip.classList.contains("entry-photos--expanded")
-        ? "show less"
-        : `+${hiddenCount} more`;
-    });
-  });
-
-  journalList.querySelectorAll(".entry-photos__thumb").forEach(thumb => {
-    thumb.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const src = thumb.getAttribute("data-full-src");
-      const caption = thumb.getAttribute("data-caption") || "";
-      openLightbox({ src, title: caption, location: "", elevation: "", conditions: "" });
-    });
-  });
-}
-
-// Resolves a single photo reference (gallery link or attached snapshot)
-// into a consistent { src, caption, isGallery } shape for rendering.
-function resolvePhoto(photoRef) {
-  if (photoRef.type === "gallery") {
-    const galleryPhoto = PHOTOS_BY_ID[photoRef.id];
-    if (!galleryPhoto) return null;
-    return { src: galleryPhoto.src, caption: galleryPhoto.title, isGallery: true };
-  }
-  if (photoRef.type === "snapshot") {
-    return { src: photoRef.src, caption: photoRef.caption || "", isGallery: false };
-  }
-  return null;
-}
-
-// Renders the thumbnail strip for one entry: first photo visible,
-// the rest hidden behind a "+N more" toggle.
-function renderEntryPhotos(photoRefs) {
-  if (!photoRefs || !photoRefs.length) return "";
-
-  const resolved = photoRefs.map(resolvePhoto).filter(Boolean);
-  if (!resolved.length) return "";
-
-  const thumbsHtml = resolved.map((p, idx) => `
-    <button
-      class="entry-photos__thumb ${idx > 0 ? "entry-photos__thumb--extra" : ""}"
-      data-full-src="${p.src}"
-      data-caption="${p.caption}"
-      aria-label="View photo${p.caption ? ": " + p.caption : ""}"
-    >
-      <img src="${p.src}" alt="${p.caption}" loading="lazy">
-    </button>
-  `).join("");
-
-  const moreBtn = resolved.length > 1
-    ? `<button class="entry-photos__more" type="button">+${resolved.length - 1} more</button>`
-    : "";
-
-  return `<div class="entry-photos">${thumbsHtml}${moreBtn}</div>`;
-}
-
-function renderEntry(entry, tripIndex, entryIndex) {
-  return `
-    <div class="trip__entry">
-      <span class="trip__entry-date">${formatDate(entry.date)}</span>
-      <div class="trip__entry-body">
-        <p class="trip__entry-title">${entry.title}</p>
-        ${entry.body ? `<p class="trip__entry-text">${entry.body}</p>` : ""}
-        ${renderEntryPhotos(entry.photos)}
-      </div>
-      ${entry.conditions ? `<span class="trip__entry-conditions">${entry.conditions}</span>` : ""}
-    </div>
-  `;
-}
 
 Promise.all([
   fetch("photos.json").then(res => {
     if (!res.ok) throw new Error(`photos.json HTTP ${res.status}`);
     return res.json();
-  }),
-  fetch("trips.json").then(res => {
-    if (!res.ok) throw new Error(`trips.json HTTP ${res.status}`);
-    return res.json();
   })
 ])
-  .then(([photos, trips]) => {
+  .then(([photos]) => {
     PHOTOS = photos;
-    PHOTOS_BY_ID = Object.fromEntries(photos.map(p => [p.id, p]));
     renderGallery(photos);
-    renderTrips(trips);
   })
   .catch(err => {
     // Most common cause: opening index.html directly from the file
     // system (file://) instead of through a server. Browsers block
     // fetch() for local files as a security measure.
-    journalList.innerHTML = `
+    galleryGrid.innerHTML = `
       <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-faint);">
-        couldn't load photos.json / trips.json — if you're viewing this from
-        a local file, run a local server (e.g. Live Server) instead of
-        opening index.html directly. (${err.message})
+        couldn't load photos.json — if you're viewing this from a local
+        file, run a local server (e.g. Live Server) instead of opening
+        index.html directly. (${err.message})
       </p>`;
   });
 
@@ -254,7 +112,7 @@ function buildFieldlogMessage() {
   return `local time ${timeStr} · ${light}`;
 }
 
-function typeMessage(el, text, speed = 125) {
+function typeMessage(el, text, speed = 28) {
   let i = 0;
   el.textContent = "";
   const interval = setInterval(() => {
