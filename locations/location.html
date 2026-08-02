@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Location Gallery — [Your Name]</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a href="index.html#top" class="nav__name">[Your Name]</a>
+  <nav class="nav__links">
+    <a href="index.html#work">work</a>
+    <a href="index.html#log">log</a>
+    <a href="index.html#contact">contact</a>
+  </nav>
+</header>
+
+<!-- ============ HEADER — filled in by location.js ============ -->
+<section class="location-header" id="locationHeader">
+  <a href="index.html#log" class="location-header__back">← back to field log</a>
+  <h1 id="locationTitle">Loading…</h1>
+  <p class="location-header__meta" id="locationMeta"></p>
+  <p class="summary" id="locationSummary"></p>
+</section>
+
+<!-- ============ GRID — filled in by location.js ============ -->
+<div class="location-grid" id="locationGrid"></div>
+
+<footer class="footer">
+  <p>© <span id="year"></span> [Your Name]. All images shot on location.</p>
+  <p class="footer__cursor">$ <span class="cursor">_</span></p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose">×</button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox__meta" id="lightboxMeta"></div>
+</div>
+
+<script src="location.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
