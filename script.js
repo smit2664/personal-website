@@ -112,7 +112,7 @@ function buildFieldlogMessage() {
   return `local time ${timeStr} · ${light}`;
 }
 
-function typeMessage(el, text, speed = 100) {
+function typeMessage(el, text, speed = 28) {
   let i = 0;
   el.textContent = "";
   const interval = setInterval(() => {
@@ -150,10 +150,30 @@ updateStatus();
 const contactForm = document.getElementById("contactForm");
 const contactNote = document.getElementById("contactNote");
 
-contactForm.addEventListener("submit", (e) => {
+contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
-  contactNote.textContent = "$ message queued — this form isn't wired to a backend yet.";
-  contactForm.reset();
+  contactNote.textContent = "$ sending…";
+
+  try {
+    const res = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" },
+    });
+
+    if (res.ok) {
+      contactNote.textContent = "$ message sent — I'll get back to you soon.";
+      contactForm.reset();
+    } else {
+      // Formspree returns a JSON body describing what went wrong
+      // (e.g. a missing/invalid form endpoint, or a validation error).
+      const data = await res.json().catch(() => ({}));
+      const detail = data.errors ? data.errors.map(err => err.message).join(", ") : "";
+      contactNote.textContent = `$ couldn't send — ${detail || "please try again shortly."}`;
+    }
+  } catch (err) {
+    contactNote.textContent = "$ couldn't send — check your connection and try again.";
+  }
 });
 
 // ============================================
