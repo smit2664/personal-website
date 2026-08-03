@@ -127,7 +127,7 @@
         </button>
         <div class="trip__entries" id="trip-entries-${i}" hidden>
           <a href="location.html?trip=${encodeURIComponent(slugify(trip.location))}" class="trip__gallery-link">
-            view all photos from this trip →
+            view all photos from this location →
           </a>
           ${(trip.entries || []).map(entry => renderEntry(entry)).join("")}
         </div>
