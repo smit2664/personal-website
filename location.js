@@ -2,11 +2,11 @@
 // LOCATION GALLERY PAGE
 //
 // Expects, per location:
-//   locations/{location-slug}.json  — a manifest listing just the
-//     filenames, e.g. ["1.jpg", "2.jpg", "3.jpg"]
-//   photos/{location-slug}/{filename}  — the actual photo files,
-//     organized into a subfolder per location inside the shared
-//     top-level "photos" folder (e.g. photos/wyoming/1.jpg)
+// locations/{location-slug}.json  — a manifest listing just the
+// filenames, e.g. ["1.jpg", "2.jpg", "3.jpg"]
+// photos/{location-slug}/{filename}  — the actual photo files,
+// organized into a subfolder per location inside the shared
+// top-level "photos" folder (e.g. photos/wyoming/1.jpg)
 //
 // These manifests are entirely separate from the field-log admin's
 // snapshots — this is for your polished, edited-at-home photos,
