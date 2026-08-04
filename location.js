@@ -4,9 +4,9 @@
 // Expects, per location:
 //   locations/{location-slug}.json  — a manifest listing just the
 //     filenames, e.g. ["1.jpg", "2.jpg", "3.jpg"]
-//   photos/{filename}  — the actual photo files, living in the same
-//     shared top-level "photos" folder the rest of the site uses
-//     (not a separate subfolder per location)
+//   photos/{location-slug}/{filename}  — the actual photo files,
+//     organized into a subfolder per location inside the shared
+//     top-level "photos" folder (e.g. photos/wyoming/1.jpg)
 //
 // These manifests are entirely separate from the field-log admin's
 // snapshots — this is for your polished, edited-at-home photos,
@@ -115,7 +115,7 @@ if (!tripId) {
       locationTitle.textContent = trip.title;
       locationMeta.textContent = `${trip.location} · ${formatDateRange(trip.startDate, trip.endDate)}`;
       locationSummary.textContent = trip.summary || "";
-      document.title = `${trip.title}`;
+      document.title = `${trip.title} — [Your Name]`;
 
       // now load this location's photo manifest
       const folder = slugify(trip.location);
@@ -130,7 +130,7 @@ if (!tripId) {
             return;
           }
           filenames.forEach(filename => {
-            addGridItem(`photos/${filename}`, trip.title);
+            addGridItem(`photos/${folder}/${filename}`, trip.title);
           });
         })
         .catch(() => {
