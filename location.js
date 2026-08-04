@@ -115,7 +115,7 @@ if (!tripId) {
       locationTitle.textContent = trip.title;
       locationMeta.textContent = `${trip.location} · ${formatDateRange(trip.startDate, trip.endDate)}`;
       locationSummary.textContent = trip.summary || "";
-      document.title = `${trip.title} — [Your Name]`;
+      document.title = `${trip.title}`;
 
       // now load this location's photo manifest
       const folder = slugify(trip.location);
