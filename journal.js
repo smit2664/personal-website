@@ -37,16 +37,16 @@
       .replace(/(^-|-$)/g, "");
   }
 
-  function formatDateRange(start, end) {
-    const startD = new Date(start + "T00:00:00");
-    const endD = new Date(end + "T00:00:00");
-    const sameMonth = startD.getMonth() === endD.getMonth() && startD.getFullYear() === endD.getFullYear();
-    const startStr = startD.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-    const endStr = sameMonth
-      ? endD.toLocaleDateString("en-US", { day: "numeric", year: "numeric" })
-      : endD.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-    return `${startStr} – ${endStr}`;
-  }
+function formatDateRange(start, end) {
+  const startD = new Date(start + "T00:00:00");
+  const endD = new Date(end + "T00:00:00");
+  const sameMonth = startD.getMonth() === endD.getMonth() && startD.getFullYear() === endD.getFullYear();
+  const startStr = startD.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const endStr = sameMonth
+    ? endD.toLocaleDateString("en-US", { day: "numeric", year: "numeric" })
+    : endD.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  return `${startStr} – ${endStr}`;
+}
 
   // Resolves a single photo reference (gallery link or attached snapshot)
   // into a consistent { src, caption } shape for rendering.
