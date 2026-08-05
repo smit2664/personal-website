@@ -1,25 +1,25 @@
 [
   {
     "id": "overlooking-banff",
-    "src": "photos/A.jpg",
-    "title": "Banff Overlook",
-    "location": "Tunnel Mountain",
+    "src": "photos/grid1.jpg",
+    "title": "Blacktail Pond Overlook",
+    "location": "Blacktail Ponds",
     "elevation": "5,500 ft",
     "conditions": "55°F · partly cloudy · calm"
   },
   {
     "id": "mighty-mac",
-    "src": "photos/mi.jpg",
-    "title": "Mighty Mac",
-    "location": "Bridge View Park",
+    "src": "photos/grid2.jpg",
+    "title": "XX",
+    "location": "XX",
     "elevation": "sea level",
     "conditions": "43°F · partly cloudy · windy"
   },
   {
     "id": "breisacher-münster-st-stephan",
-    "src": "photos/E.jpg",
-    "title": "Breisacher Münster St. Stephan",
-    "location": "Eckartsberg Obersevation",
+    "src": "photos/grid3.jpg",
+    "title": "XX",
+    "location": "XX",
     "elevation": "700 ft",
     "conditions": "80°F · partly cloudy · rain"
   },
@@ -33,17 +33,17 @@
   },
   {
     "id": "windmill",
-    "src": "photos/4.jpg",
-    "title": "Windmill",
-    "location": "Unesco Werelderfgoed Kinderdijk",
+    "src": "photos/grid5.jpg",
+    "title": "XX",
+    "location": "XX",
     "elevation": "sea level",
     "conditions": "60°F · cloudy · rain · windy"
   },
   {
     "id": "grand-prismatic",
-    "src": "photos/P.jpg",
-    "title": "Grand Prismatic",
-    "location": "Grand Prismatic Overlook, Yellowstone",
+    "src": "photos/grid6.jpg",
+    "title": "XX",
+    "location": "XX",
     "elevation": "7,400 ft",
     "conditions": "77°F · clear · dry"
   }
