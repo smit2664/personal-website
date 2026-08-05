@@ -1,5 +1,22 @@
 [
   {
+    "id": "new-orleans-2026-05-06",
+    "title": "New Orleans",
+    "location": "New Orleans",
+    "startDate": "2026-05-06",
+    "endDate": "2026-05-06",
+    "summary": "Spring trip with Lance",
+    "entries": [
+      {
+        "date": "2026-05-06",
+        "title": "Trip",
+        "conditions": "86°F · overcast · humid",
+        "body": "",
+        "photos": []
+      }
+    ]
+  },
+  {
     "id": "wyoming-2026-08-02",
     "title": "Wyoming",
     "location": "Wyoming",
