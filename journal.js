@@ -43,7 +43,7 @@ function formatDateRange(start, end) {
   const sameMonth = startD.getMonth() === endD.getMonth() && startD.getFullYear() === endD.getFullYear();
   const startStr = startD.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   const endStr = sameMonth
-    ? endD.toLocaleDateString("en-US", { day: "numeric", year: "numeric" })
+    ? `${endD.getDate()}, ${endD.getFullYear()}`
     : endD.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
   return `${startStr} – ${endStr}`;
 }
