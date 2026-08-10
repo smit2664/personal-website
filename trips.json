@@ -1,5 +1,31 @@
 [
   {
+    "id": "spain-2026-08-10",
+    "title": "Spain",
+    "location": "Spain",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-10",
+    "summary": "2026 Solar Eclipse Trip!",
+    "entries": [
+      {
+        "date": "2026-08-10",
+        "title": "I could get used to this",
+        "conditions": "83°F · overcast · drizzle",
+        "body": "",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-10-i-could-get-used-to-this-4c86h.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-10-i-could-get-used-to-this-ken7s.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "new-orleans-2026-05-06",
     "title": "New Orleans",
     "location": "New Orleans",
