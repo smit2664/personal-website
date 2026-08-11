@@ -4,7 +4,7 @@
     "title": "Spain",
     "location": "Spain",
     "startDate": "2026-08-10",
-    "endDate": "2026-08-10",
+    "endDate": "2026-08-11",
     "summary": "2026 Solar Eclipse Trip!",
     "entries": [
       {
@@ -20,6 +20,26 @@
           {
             "type": "snapshot",
             "src": "snapshots/2026-08-10-i-could-get-used-to-this-ken7s.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-11",
+        "title": "Bus Ride to Soria",
+        "conditions": "99°F · clear",
+        "body": "",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-11-bus-ride-to-soria-pf7o4.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-11-bus-ride-to-soria-s19dj.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-11-bus-ride-to-soria-t1odd.jpg"
           }
         ]
       }
