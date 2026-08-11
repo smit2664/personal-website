@@ -42,6 +42,18 @@
             "src": "snapshots/2026-08-11-bus-ride-to-soria-t1odd.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-11",
+        "title": "Beef tail",
+        "conditions": "76°F · clear",
+        "body": "Rabo de Ternera",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-11-beef-tail-p6k6d.jpg"
+          }
+        ]
       }
     ]
   },
