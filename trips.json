@@ -4,7 +4,7 @@
     "title": "Spain",
     "location": "Spain",
     "startDate": "2026-08-10",
-    "endDate": "2026-08-11",
+    "endDate": "2026-08-12",
     "summary": "2026 Solar Eclipse Trip!",
     "entries": [
       {
@@ -52,6 +52,18 @@
           {
             "type": "snapshot",
             "src": "snapshots/2026-08-11-beef-tail-p6k6d.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "title": "Arepas",
+        "conditions": "75°F · clear",
+        "body": "",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-12-arepas-hmwvg.jpg"
           }
         ]
       }
