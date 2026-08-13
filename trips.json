@@ -4,7 +4,7 @@
     "title": "Spain",
     "location": "Spain",
     "startDate": "2026-08-10",
-    "endDate": "2026-08-12",
+    "endDate": "2026-08-13",
     "summary": "2026 Solar Eclipse Trip!",
     "entries": [
       {
@@ -64,6 +64,42 @@
           {
             "type": "snapshot",
             "src": "snapshots/2026-08-12-arepas-hmwvg.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "title": "Eclipse Time",
+        "conditions": "91°F · clear",
+        "body": "Prep!",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-12-eclipse-time-ce227.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-12-eclipse-time-bdl2w.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-12-eclipse-time-x7po6.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-12-eclipse-time-h1poi.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-13",
+        "title": "Gas",
+        "conditions": "73°F · clear",
+        "body": "Someone pumped our gas",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-13-gas-leq64.jpg"
           }
         ]
       }
