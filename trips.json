@@ -4,7 +4,7 @@
     "title": "Spain",
     "location": "Spain",
     "startDate": "2026-08-10",
-    "endDate": "2026-08-13",
+    "endDate": "2026-08-14",
     "summary": "2026 Solar Eclipse Trip!",
     "entries": [
       {
@@ -112,6 +112,34 @@
           {
             "type": "snapshot",
             "src": "snapshots/2026-08-13-dropping-the-rental-off-ed3ul.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-14",
+        "title": "El Tren",
+        "conditions": "72°F · partly cloudy · calm",
+        "body": "Almost didn't make the train today because we thought the bus would pick us up at the bus station. Did not. Had to make it to the train station in 15 minutes with a 20 minute walk ahead of us. Still can't believe we are at the train station.",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-el-tren-twyd6.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-el-tren-pcpns.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-el-tren-snvgz.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-el-tren-bhd96.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-el-tren-ectxk.jpg"
           }
         ]
       }
