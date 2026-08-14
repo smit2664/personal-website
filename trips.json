@@ -142,6 +142,26 @@
             "src": "snapshots/2026-08-14-el-tren-ectxk.jpg"
           }
         ]
+      },
+      {
+        "date": "2026-08-14",
+        "title": "Almuerzo",
+        "conditions": "100°F · clear · dry",
+        "body": "Much needed break from the sun.",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-almuerzo-gn1rt.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-almuerzo-9m756.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-almuerzo-7mgvs.jpg"
+          }
+        ]
       }
     ]
   },
