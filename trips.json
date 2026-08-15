@@ -4,7 +4,7 @@
     "title": "Spain",
     "location": "Spain",
     "startDate": "2026-08-10",
-    "endDate": "2026-08-14",
+    "endDate": "2026-08-15",
     "summary": "2026 Solar Eclipse Trip!",
     "entries": [
       {
@@ -160,6 +160,50 @@
           {
             "type": "snapshot",
             "src": "snapshots/2026-08-14-almuerzo-7mgvs.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-14",
+        "title": "On Top of Toledo",
+        "conditions": "101°F · partly cloudy · storm · humid",
+        "body": "",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-on-top-of-toledo-q8tpr.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-on-top-of-toledo-h2x3f.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-14-on-top-of-toledo-7t55h.jpg"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-15",
+        "title": "Rooftop Adventure",
+        "conditions": "83°F · partly cloudy",
+        "body": "",
+        "photos": [
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-15-rooftop-adventure-3znlg.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-15-rooftop-adventure-8hb1y.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-15-rooftop-adventure-qv0be.jpg"
+          },
+          {
+            "type": "snapshot",
+            "src": "snapshots/2026-08-15-rooftop-adventure-2hs6o.jpg"
           }
         ]
       }
