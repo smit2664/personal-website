@@ -74,8 +74,8 @@
   text-transform:uppercase;
   pointer-events:none
 }
-.compare-label.after{left:.75rem}
-.compare-label.before{right:.75rem}
+.compare-label.before{left:.75rem}
+.compare-label.after{right:.75rem}
 
 /* Invisible range input on top: gives mouse, touch and keyboard (arrow keys) for free */
 .compare-range{
