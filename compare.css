@@ -94,3 +94,13 @@
 }
 .compare-range::-webkit-slider-thumb{-webkit-appearance:none;width:1px;height:100vh}
 .compare-range::-moz-range-thumb{width:1px;height:100vh;border:0;background:transparent}
+
+/* Caption aligned with left edge of comparison photo */
+.featured p {
+  max-width: 760px;
+  width: 100%;
+  margin: -40px auto 60px auto;
+  text-align: left;
+  font-size: 14px;
+  color: #ccc;
+}
