@@ -6,8 +6,8 @@
   z-index:-1;
   background:
     linear-gradient(
-      color-mix(in srgb,var(--bg) 50%,transparent),
-      color-mix(in srgb,var(--bg) 50%,transparent)
+      color-mix(in srgb,var(--bg) 35%,transparent),
+      color-mix(in srgb,var(--bg) 35%,transparent)
     ),
     url(../photos/contact.jpg) center/cover no-repeat;
 }
@@ -126,7 +126,7 @@ footer{
   justify-content:space-between;
   align-items:center;
   gap:1rem;
-  padding:3.5rem 5vw;
+  padding:0.85rem 5vw;
   color:var(--mute);
   font-size:.9rem;
   background:color-mix(in srgb,var(--bg) 72%,transparent);
