@@ -99,8 +99,8 @@
 .featured p {
   max-width: 760px;
   width: 100%;
-  margin: -40px auto 60px auto;
+  margin: -40px auto;
   text-align: left;
-  font-size: 14px;
+  font-size: 21px;
   color: #ccc;
 }
