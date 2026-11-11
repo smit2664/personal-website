@@ -3,7 +3,7 @@
   --pos:50%; 
   margin: 60px auto;
   width: 100%;
-  max-width:760px; 
+  max-width:1500px; 
   position:relative;
   aspect-ratio:2/1;          /* match your photos, e.g. style="aspect-ratio:16/10" */
   overflow:hidden;
