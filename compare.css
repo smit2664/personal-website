@@ -1,0 +1,92 @@
+/* Before / after slider. Works with <img> or any block as the two layers. */
+.compare{
+  --pos:50%;
+  position:relative;
+  aspect-ratio:3/2;          /* match your photos, e.g. style="aspect-ratio:16/10" */
+  overflow:hidden;
+  border-radius:4px;
+  background:var(--line);
+  user-select:none;
+  -webkit-user-select:none;
+  touch-action:pan-y         /* vertical scroll still works on phones */
+}
+
+.compare-before,
+.compare-after{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block
+}
+
+/* The "before" layer is cropped from the right edge up to the slider */
+.compare-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+
+/* Divider line + round handle */
+.compare-handle{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:var(--pos);
+  width:2px;
+  background:#fff;
+  transform:translateX(-50%);
+  pointer-events:none;
+  box-shadow:0 0 8px rgba(0,0,0,.35)
+}
+.compare-handle::after{
+  content:"◂ ▸";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:2.75rem;
+  height:2.75rem;
+  display:grid;
+  place-items:center;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:rgba(15,22,24,.55);
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+  border:2px solid #fff;
+  color:#fff;
+  font-size:.8rem;
+  letter-spacing:.1em
+}
+.compare:focus-within .compare-handle::after{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)}
+
+/* Labels */
+.compare-label{
+  position:absolute;
+  bottom:.75rem;
+  padding:.3rem .8rem;
+  border-radius:4px;
+  background:rgba(15,22,24,.6);
+  -webkit-backdrop-filter:blur(6px);
+  backdrop-filter:blur(6px);
+  color:#fff;
+  font-size:.85rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  pointer-events:none
+}
+.compare-label.before{left:.75rem}
+.compare-label.after{right:.75rem}
+
+/* Invisible range input on top: gives mouse, touch and keyboard (arrow keys) for free */
+.compare-range{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  margin:0;
+  opacity:0;
+  cursor:ew-resize;
+  -webkit-appearance:none;
+  appearance:none;
+  background:transparent
+}
+.compare-range::-webkit-slider-thumb{-webkit-appearance:none;width:1px;height:100vh}
+.compare-range::-moz-range-thumb{width:1px;height:100vh;border:0;background:transparent}
