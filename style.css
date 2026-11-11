@@ -65,6 +65,24 @@ nav a[aria-current="page"]{
   background-size:100% 1px
 }
 
+nav > a,
+.has-menu > a{
+  padding-bottom:4px;
+  opacity:.85;
+  background:linear-gradient(currentColor,currentColor) left bottom / 0 1px no-repeat;
+  transition:opacity .2s,background-size .3s
+}
+
+nav > a:hover,
+nav > a:focus-visible,
+nav > a[aria-current="page"],
+.has-menu > a:hover,
+.has-menu:focus-within > a,
+.has-menu > a[aria-current="page"]{
+  opacity:1;
+  background-size:100% 1px
+}
+
 .header-right{
   display:flex;
   justify-content:flex-end;
@@ -162,6 +180,59 @@ h1{
   margin-top:1rem;
   font-size:1.2rem;
   max-width:60ch
+}
+
+/* Locations dropdown */
+.has-menu{position:relative}
+
+.menu{
+  position:absolute;
+  top:calc(100% + .9rem);
+  left:50%;
+  transform:translate(-50%,-4px);
+  min-width:12rem;
+  list-style:none;
+  padding:.4rem;
+  background:color-mix(in srgb,var(--bg) 92%,transparent);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  border:1px solid var(--line);
+  border-radius:8px;
+  opacity:0;
+  visibility:hidden;
+  transition:opacity .2s,transform .2s,visibility .2s
+}
+
+.menu::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:-1rem;
+  height:1rem
+}
+
+.has-menu:hover .menu,
+.has-menu:focus-within .menu{
+  opacity:1;
+  visibility:visible;
+  transform:translate(-50%,0)
+}
+
+.menu a{
+  display:block;
+  padding:.5rem .9rem;
+  border-radius:5px;
+  white-space:nowrap
+}
+
+.menu a:hover,
+.menu a:focus-visible{
+  background:color-mix(in srgb,var(--fg) 10%,transparent)
+}
+
+@media(max-width:720px){
+  .menu{display:none}   /* phones: Locations just scrolls to the section */
 }
 
 /* Locations */
