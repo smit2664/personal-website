@@ -1,0 +1,150 @@
+/* Background photo */
+.contact-page::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(
+      color-mix(in srgb,var(--bg) 50%,transparent),
+      color-mix(in srgb,var(--bg) 50%,transparent)
+    ),
+    url(../photos/contact.jpg) center/cover no-repeat;
+}
+
+.contact{
+    max-width:680px;
+    margin:0;
+    padding:8rem 5vw 6rem;
+}
+
+.contact h1{
+    font-size:clamp(2.2rem,6vw,3.2rem);
+    line-height:1.1;
+    letter-spacing:-.02em
+}
+
+.contact .intro{
+    margin-top:.75rem;
+    color:var(--mute);
+    font-size:1.15rem
+}
+
+form{
+    margin-top:2.5rem
+}
+
+.field{
+    margin-bottom:1.5rem
+}
+
+label{
+    display:block;
+    margin-bottom:.4rem;
+    color:var(--mute);
+    font-size:.95rem
+}
+
+input,textarea{
+  width:100%;
+  font:inherit;
+  color:var(--fg);
+  background:color-mix(in srgb,var(--fg) 6%,var(--bg));
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:.8rem 1rem;
+  transition:border-color .2s
+}
+
+textarea{
+    min-height:9rem;
+    resize:vertical
+}
+
+input:hover,textarea:hover{
+    border-color:var(--mute)
+}
+
+input:focus,textarea:focus{
+    outline:none;
+    border-color:var(--accent);
+    box-shadow:0 0 0 1px var(--accent)
+}
+
+nav a{
+  padding-bottom:4px;
+  opacity:.85;
+  background:linear-gradient(currentColor,currentColor) left bottom / 0 1px no-repeat;
+  transition:opacity .2s,background-size .3s
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"]{
+  opacity:1;
+  background-size:100% 1px
+}
+
+/* Mode indicator */
+.mode-icon{display:flex;align-items:center;color:var(--fg)}
+.mode-icon svg{display:none}
+[data-theme=light] .icon-light{display:block}
+[data-theme=dark] .icon-dark{display:block}
+
+/* Send button: accent fill; overrides the header-style outline button */
+.send{
+  background:var(--accent);
+  color:var(--bg);
+  border:1px solid var(--accent);
+  border-radius:4px;
+  padding:.8rem 1.6rem;
+  font-weight:500;
+  transition:background .2s,color .2s
+}
+
+.send:hover{
+    background:transparent;
+    color:var(--accent)
+}
+
+.send:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px
+}
+
+/* Footer */
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+main{width:100%;flex:1}   /* pushes the footer down on short pages */
+
+footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding:3.5rem 5vw;
+  color:var(--mute);
+  font-size:.9rem;
+  background:color-mix(in srgb,var(--bg) 72%,transparent);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  transition:background .3s,color .3s
+}
+
+@media(max-width:720px){
+  footer{font-size:.8rem;padding:.7rem 5vw}
+}
+
+/* Spam trap: hidden from people, filled in by bots. Formspree ignores submissions that fill it. */
+.trap{
+    position:absolute;
+    left:-9999px;
+    width:1px;
+    height:1px;
+    opacity:0
+}
