@@ -2,7 +2,9 @@
 .compare{
   --pos:50%; 
   max-width:760px; 
-  position:relative;
+  position:absolute; /* 2. Pulls child out of document flow */
+  top:50%;           
+  left:50%;  
   aspect-ratio:3/2;          /* match your photos, e.g. style="aspect-ratio:16/10" */
   overflow:hidden;
   border-radius:4px;
