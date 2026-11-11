@@ -255,7 +255,16 @@ footer{
 }
 
 @media(max-width:720px){
+  .row{grid-template-columns:1fr;gap:1.25rem}
+  .row:nth-child(odd) .thumb{order:0}
   footer{font-size:.8rem;padding:.7rem 5vw}
 }
 
-.row:nth-child(odd) .thumb{order:0}
+.row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:3rem;
+  align-items:start;
+  padding:2.5rem 0;
+  border-top:1px solid var(--line)
+}
