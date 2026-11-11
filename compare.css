@@ -14,7 +14,7 @@
   touch-action:pan-y         /* vertical scroll still works on phones */
 }
 
-.compare-before,
+/*.compare-before,
 .compare-after{
   position:absolute;
   inset:0;
@@ -22,6 +22,18 @@
   height:100%;
   object-fit:cover;
   display:block
+}*/
+
+.compare-before,
+.compare-after {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  image-rendering: auto;
 }
 
 /* The "before" layer is cropped from the right edge up to the slider */
