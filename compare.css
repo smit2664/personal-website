@@ -1,6 +1,6 @@
 /* Before / after slider. Works with <img> or any block as the two layers. */
 .compare{
-  --pos:20%; /* staring position of the slider */
+  --pos:50%; 
   max-width:760px; 
   position:relative;
   aspect-ratio:3/2;          /* match your photos, e.g. style="aspect-ratio:16/10" */
