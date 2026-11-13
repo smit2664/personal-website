@@ -1,9 +1,9 @@
 /* Before / after slider. Works with <img> or any block as the two layers. */
 .compare{
   --pos:50%; 
-  margin: 60px auto;
-  width: 100%;
-  max-width:760px; 
+  margin:60px auto;
+  width:75%;
+  max-width:none; 
   position:relative;
   aspect-ratio:2/1;          /* match your photos, e.g. style="aspect-ratio:16/10" */
   overflow:hidden;
@@ -13,16 +13,6 @@
   -webkit-user-select:none;
   touch-action:pan-y         /* vertical scroll still works on phones */
 }
-
-/*.compare-before,
-.compare-after{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block
-}*/
 
 .compare-before,
 .compare-after {
@@ -39,7 +29,6 @@
 /* The "before" layer is cropped from the right edge up to the slider */
 .compare-before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)} 
 
-
 /* Divider line + round handle */
 .compare-handle{
   position:absolute;
@@ -52,6 +41,7 @@
   pointer-events:none;
   box-shadow:0 0 8px rgba(0,0,0,.35)
 }
+
 .compare-handle::after{
   content:"◂ ▸";
   position:absolute;
@@ -109,10 +99,20 @@
 
 /* Caption aligned with left edge of comparison photo */
 .featured p {
-  max-width: 760px;
-  width: 100%;
+  max-width: none;
+  width: 75%;
   margin: -40px auto;
   text-align: left;
   font-size: 21px;
   color: #ccc;
+}
+
+/* Full-width section so 75% means 75% of the screen */
+.featured{max-width:none;padding-left:0;padding-right:0}
+.featured h2{width:75%;margin:0 auto 2rem}   /* heading lines up with the photo's left edge */
+
+@media(max-width:720px){
+  .compare,
+  .featured p,
+  .featured h2{width:92%}
 }
